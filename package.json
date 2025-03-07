@@ -1,0 +1,21 @@
+{
+  "name": "ai-articles",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "convert": "node md-to-ipynb.js"
+  },
+  "bin": {
+    "md-to-ipynb": "./md-to-ipynb.js"
+  },
+  "keywords": [
+    "markdown",
+    "jupyter",
+    "notebook",
+    "converter"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "Tools for converting AI articles between different formats"
+}
