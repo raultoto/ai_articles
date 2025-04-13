@@ -1,322 +1,90 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 124 124" fill="none">
   <defs>
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="2" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
   </defs>
-
-  <!-- Orange background rectangle -->
+<!--Orange background rectangle-->
   <rect width="124" height="124" rx="24" fill="#F97316">
-    <!-- Initial scale animation -->
-    <animate
-      id="bgReveal"
-      attributeName="opacity"
-      from="0"
-      to="1"
-      dur="0.7s"
-      begin="0s"
-      fill="freeze"
-    />
-    <animateTransform
-      attributeName="transform"
-      type="scale"
-      from="0.8"
-      to="1"
-      dur="0.7s"
-      begin="0s"
-      fill="freeze"
-      additive="sum"
-    />
-    <!-- Subtle pulsing animation -->
-    <animate
-      attributeName="rx"
-      values="24;26;24"
-      dur="3s"
-      begin="bgReveal.end"
-      repeatCount="indefinite"
-    />
+<!--Initial scale animation-->
+    <animate id="bgReveal" attributeName="opacity" from="0" to="1" dur="0.7s" begin="0s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="scale" from="0.8" to="1" dur="0.7s" begin="0s" fill="freeze" additive="sum"/>
+<!--Subtle pulsing animation-->
+    <animate attributeName="rx" values="24;26;24" dur="3s" begin="bgReveal.end" repeatCount="indefinite"/>
   </rect>
-
-  <!-- White triangular shape -->
+<!--White triangular shape-->
   <path d="M19.375 36.7818V100.625C19.375 102.834 21.1659 104.625 23.375 104.625H87.2181C90.7818 104.625 92.5664 100.316 90.0466 97.7966L26.2034 33.9534C23.6836 31.4336 19.375 33.2182 19.375 36.7818Z" fill="white">
-    <!-- Triangle reveal animation -->
-    <animate
-      id="triangleReveal"
-      attributeName="opacity"
-      from="0"
-      to="1"
-      dur="0.8s"
-      begin="bgReveal.end"
-      fill="freeze"
-    />
-    <animateTransform
-      attributeName="transform"
-      type="translate"
-      from="-20 0"
-      to="0 0"
-      dur="0.8s"
-      begin="bgReveal.end"
-      fill="freeze"
-    />
-    <!-- Subtle float animation -->
-    <animateTransform
-      attributeName="transform"
-      type="translate"
-      values="0,0; 0,1.5; 0,0"
-      dur="4s"
-      begin="triangleReveal.end"
-      repeatCount="indefinite"
-      additive="sum"
-    />
-    <!-- Hover effect - implemented with SMIL for SVG compatibility -->
-    <animate
-      id="triangleHover"
-      attributeName="opacity"
-      from="1"
-      to="0.8"
-      dur="0.3s"
-      begin="mouseover"
-      fill="freeze"
-    />
-    <animate
-      attributeName="opacity"
-      from="0.8"
-      to="1"
-      dur="0.3s"
-      begin="mouseout"
-      fill="freeze"
-    />
-    <animateTransform
-      attributeName="transform"
-      type="translate"
-      from="0 0"
-      to="0 -3"
-      dur="0.3s"
-      begin="mouseover"
-      fill="freeze"
-      additive="sum"
-    />
-    <animateTransform
-      attributeName="transform"
-      type="translate"
-      from="0 -3"
-      to="0 0"
-      dur="0.3s"
-      begin="mouseout"
-      fill="freeze"
-      additive="sum"
-    />
+<!--Triangle reveal animation-->
+    <animate id="triangleReveal" attributeName="opacity" from="0" to="1" dur="0.8s" begin="bgReveal.end" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="-20 0" to="0 0" dur="0.8s" begin="bgReveal.end" fill="freeze"/>
+<!--Subtle float animation-->
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,1.5; 0,0" dur="4s" begin="triangleReveal.end" repeatCount="indefinite" additive="sum"/>
+<!--Hover effect - implemented with SMIL for SVG compatibility-->
+    <animate id="triangleHover" attributeName="opacity" from="1" to="0.8" dur="0.3s" begin="mouseover" fill="freeze"/>
+    <animate attributeName="opacity" from="0.8" to="1" dur="0.3s" begin="mouseout" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="0 -3" dur="0.3s" begin="mouseover" fill="freeze" additive="sum"/>
+    <animateTransform attributeName="transform" type="translate" from="0 -3" to="0 0" dur="0.3s" begin="mouseout" fill="freeze" additive="sum"/>
   </path>
-
-  <!-- Black circle -->
+<!--Black circle-->
   <circle cx="63.2109" cy="37.5391" r="18.1641" fill="black">
-    <!-- Circle entry animation -->
-    <animate
-      id="circleReveal"
-      attributeName="opacity"
-      from="0"
-      to="1"
-      dur="0.7s"
-      begin="triangleReveal.begin+0.2s"
-      fill="freeze"
-    />
-    <animateTransform
-      attributeName="transform"
-      type="translate"
-      from="0 -20"
-      to="0 0"
-      dur="0.8s"
-      begin="triangleReveal.begin+0.2s"
-      fill="freeze"
-    />
-    <animateTransform
-      attributeName="transform"
-      type="scale"
-      from="0.7"
-      to="1"
-      dur="0.8s"
-      begin="triangleReveal.begin+0.2s"
-      fill="freeze"
-      additive="sum"
-    />
-    <!-- Pulse effect -->
-    <animate
-      attributeName="r"
-      values="18.1641;19.5;18.1641"
-      dur="2.5s"
-      begin="circleReveal.end"
-      repeatCount="indefinite"
-    />
-    <!-- Subtle float animation -->
-    <animateTransform
-      attributeName="transform"
-      type="translate"
-      values="0,0; 1,0; 0,0"
-      dur="3.5s"
-      begin="circleReveal.end"
-      repeatCount="indefinite"
-      additive="sum"
-    />
-    <!-- Hover effect -->
-    <animate
-      id="circleHover"
-      attributeName="r"
-      from="18.1641"
-      to="19.5"
-      dur="0.3s"
-      begin="mouseover"
-      fill="freeze"
-    />
-    <animate
-      attributeName="r"
-      from="19.5"
-      to="18.1641"
-      dur="0.3s"
-      begin="mouseout"
-      fill="freeze"
-    />
-    <animate
-      attributeName="fill"
-      from="black"
-      to="#333"
-      dur="0.3s"
-      begin="mouseover"
-      fill="freeze"
-    />
-    <animate
-      attributeName="fill"
-      from="#333"
-      to="black"
-      dur="0.3s"
-      begin="mouseout"
-      fill="freeze"
-    />
+<!--Circle entry animation-->
+    <animate id="circleReveal" attributeName="opacity" from="0" to="1" dur="0.7s" begin="triangleReveal.begin+0.2s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="0 -20" to="0 0" dur="0.8s" begin="triangleReveal.begin+0.2s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="scale" from="0.7" to="1" dur="0.8s" begin="triangleReveal.begin+0.2s" fill="freeze" additive="sum"/>
+<!--Pulse effect-->
+    <animate attributeName="r" values="18.1641;19.5;18.1641" dur="2.5s" begin="circleReveal.end" repeatCount="indefinite"/>
+<!--Subtle float animation-->
+    <animateTransform attributeName="transform" type="translate" values="0,0; 1,0; 0,0" dur="3.5s" begin="circleReveal.end" repeatCount="indefinite" additive="sum"/>
+<!--Hover effect-->
+    <animate id="circleHover" attributeName="r" from="18.1641" to="19.5" dur="0.3s" begin="mouseover" fill="freeze"/>
+    <animate attributeName="r" from="19.5" to="18.1641" dur="0.3s" begin="mouseout" fill="freeze"/>
+    <animate attributeName="fill" from="black" to="#333" dur="0.3s" begin="mouseover" fill="freeze"/>
+    <animate attributeName="fill" from="#333" to="black" dur="0.3s" begin="mouseout" fill="freeze"/>
   </circle>
-
-  <!-- Semi-transparent orange square with rotation -->
+<!--Semi-transparent orange square with rotation-->
   <rect opacity="0.4" x="81.1328" y="80.7198" width="17.5687" height="17.3876" rx="4" transform="rotate(-45 81.1328 80.7198)" fill="#FDBA74">
-    <!-- Diamond reveal animation -->
-    <animate
-      id="diamondReveal"
-      attributeName="opacity"
-      from="0"
-      to="0.4"
-      dur="0.7s"
-      begin="circleReveal.begin+0.3s"
-      fill="freeze"
-    />
-    <animateTransform
-      attributeName="transform"
-      type="rotate"
-      from="-90 81.1328 80.7198"
-      to="-45 81.1328 80.7198"
-      dur="0.9s"
-      begin="circleReveal.begin+0.3s"
-      fill="freeze"
-    />
-    <!-- Continuous rotation oscillation -->
-    <animateTransform
-      attributeName="transform"
-      type="rotate"
-      values="-45 81.1328 80.7198;-55 81.1328 80.7198;-45 81.1328 80.7198"
-      dur="3s"
-      begin="diamondReveal.end"
-      repeatCount="indefinite"
-      additive="sum"
-    />
-    <!-- Subtle float animation -->
-    <animateTransform
-      attributeName="transform"
-      type="translate"
-      values="0,0; 0,1; 0,0"
-      dur="4.5s"
-      begin="diamondReveal.end"
-      repeatCount="indefinite"
-      additive="sum"
-    />
-    <!-- Hover effect -->
-    <animate
-      id="diamondHover"
-      attributeName="opacity"
-      from="0.4"
-      to="0.7"
-      dur="0.3s"
-      begin="mouseover"
-      fill="freeze"
-    />
-    <animate
-      attributeName="opacity"
-      from="0.7"
-      to="0.4"
-      dur="0.3s"
-      begin="mouseout"
-      fill="freeze"
-    />
-    <animateTransform
-      attributeName="transform"
-      type="rotate"
-      from="-45 81.1328 80.7198"
-      to="-60 81.1328 80.7198"
-      dur="0.4s"
-      begin="mouseover"
-      fill="freeze"
-      additive="sum"
-    />
-    <animateTransform
-      attributeName="transform"
-      type="rotate"
-      from="-60 81.1328 80.7198"
-      to="-45 81.1328 80.7198"
-      dur="0.4s"
-      begin="mouseout"
-      fill="freeze"
-      additive="sum"
-    />
+<!--Diamond reveal animation-->
+    <animate id="diamondReveal" attributeName="opacity" from="0" to="0.4" dur="0.7s" begin="circleReveal.begin+0.3s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="rotate" from="-90 81.1328 80.7198" to="-45 81.1328 80.7198" dur="0.9s" begin="circleReveal.begin+0.3s" fill="freeze"/>
+<!--Continuous rotation oscillation-->
+    <animateTransform attributeName="transform" type="rotate" values="-45 81.1328 80.7198;-55 81.1328 80.7198;-45 81.1328 80.7198" dur="3s" begin="diamondReveal.end" repeatCount="indefinite" additive="sum"/>
+<!--Subtle float animation-->
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,1; 0,0" dur="4.5s" begin="diamondReveal.end" repeatCount="indefinite" additive="sum"/>
+<!--Hover effect-->
+    <animate id="diamondHover" attributeName="opacity" from="0.4" to="0.7" dur="0.3s" begin="mouseover" fill="freeze"/>
+    <animate attributeName="opacity" from="0.7" to="0.4" dur="0.3s" begin="mouseout" fill="freeze"/>
+    <animateTransform attributeName="transform" type="rotate" from="-45 81.1328 80.7198" to="-60 81.1328 80.7198" dur="0.4s" begin="mouseover" fill="freeze" additive="sum"/>
+    <animateTransform attributeName="transform" type="rotate" from="-60 81.1328 80.7198" to="-45 81.1328 80.7198" dur="0.4s" begin="mouseout" fill="freeze" additive="sum"/>
   </rect>
-
-  <!-- Reset animation trigger area (invisible) -->
+<!--Reset animation trigger area (invisible)-->
   <rect width="124" height="124" opacity="0" fill="white">
-    <animate
-      id="resetAnimation"
-      attributeName="opacity"
-      from="0"
-      to="0"
-      dur="0.1s"
-      begin="dblclick"
-      fill="freeze"
-    />
+    <animate id="resetAnimation" attributeName="opacity" from="0" to="0" dur="0.1s" begin="dblclick" fill="freeze"/>
   </rect>
-
-  <!-- Reset animations for all elements -->
-  <animate
-    attributeType="CSS"
-    attributeName="opacity"
-    from="1"
-    to="0"
-    dur="0.5s"
-    begin="resetAnimation.begin"
-    fill="freeze"
-    xlink:href="rect:first-of-type"
-  /> 
-  <animate
-    attributeType="CSS"
-    attributeName="opacity"
-    from="0"
-    to="0"
-    dur="0.01s"
-    begin="resetAnimation.begin+0.5s"
-    fill="freeze"
-    xlink:href="rect:first-of-type"
-  />
-  <animate
-    attributeType="CSS"
-    attributeName="opacity"
-    from="0"
-    to="1"
-    dur="0.7s"
-    begin="resetAnimation.begin+0.51s"
-    fill="freeze"
-    xlink:href="rect:first-of-type"
-  />
+<!--Reset animations for all elements-->
+  <rect id="bgRect" width="0" height="0" opacity="0">
+    <set attributeName="opacity" to="0" begin="resetAnimation.begin"/>
+    <set attributeName="opacity" to="0" begin="resetAnimation.begin+0.01s"/>
+  </rect>
+  <script type="text/javascript">
+    //
+    <![CDATA[
+    // This script handles the reset functionality without using xlink
+    document.addEventListener('DOMContentLoaded', function() {
+      const svg = document.querySelector('svg');
+      svg.addEventListener('dblclick', function() {
+        // Get all animated elements
+        const elements = svg.querySelectorAll('rect, path, circle');
+        
+        // Reset animations by removing and re-adding the SVG to the DOM
+        const parent = svg.parentNode;
+        const svgClone = svg.cloneNode(true);
+        parent.removeChild(svg);
+        setTimeout(() => {
+          parent.appendChild(svgClone);
+        }, 10);
+      });
+    });
+    //]]>
+  </script>
 </svg>
