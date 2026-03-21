@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 1445 719" width="1445" height="719">
+  <defs>
+    <radialGradient id="__bgGrad" cx="40%" cy="35%" r="75%" gradientUnits="userSpaceOnUse" gradientTransform="scale(1445,719)">
+    <stop offset="0%" stop-color="#06070f"/>
+    <stop offset="50%" stop-color="#0d0f1e"/>
+    <stop offset="100%" stop-color="#06070f"/>
+  </radialGradient>
+<filter id="__bg_blur"><feGaussianBlur stdDeviation="60"/></filter>
+
+<filter id="__shadow" x="-20%" y="-20%" width="140%" height="160%" color-interpolation-filters="sRGB">
+  <feDropShadow dx="0" dy="8" stdDeviation="12"
+    flood-color="#000" flood-opacity="0.2"/>
+  <feDropShadow dx="0" dy="3.2" stdDeviation="4.800000000000001"
+    flood-color="#000" flood-opacity="0.15"/>
+</filter>
+
+<filter id="__shadowSm" x="-20%" y="-20%" width="140%" height="160%" color-interpolation-filters="sRGB">
+  <feDropShadow dx="0" dy="4" stdDeviation="6"
+    flood-color="#000" flood-opacity="0.13999999999999999"/>
+  <feDropShadow dx="0" dy="1.6" stdDeviation="2.4000000000000004"
+    flood-color="#000" flood-opacity="0.105"/>
+</filter>
+
+<filter id="__glass" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+  <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise"/>
+  <feColorMatrix in="noise" type="saturate" values="0" result="grayNoise"/>
+  <feBlend in="SourceGraphic" in2="grayNoise" mode="overlay" result="blended"/>
+  <feComposite in="blended" in2="SourceGraphic" operator="atop"/>
+</filter>
+
+<filter id="__glow" x="-60%" y="-60%" width="220%" height="220%" color-interpolation-filters="sRGB">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur1"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur2"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur3"/>
+  <feMerge>
+    <feMergeNode in="blur3"/>
+    <feMergeNode in="blur2"/>
+    <feMergeNode in="blur1"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+<filter id="__glowEdge" x="-60%" y="-60%" width="220%" height="220%" color-interpolation-filters="sRGB">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" result="blur1"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur2"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur3"/>
+  <feMerge>
+    <feMergeNode in="blur3"/>
+    <feMergeNode in="blur2"/>
+    <feMergeNode in="blur1"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+<marker id="arr__ef4444" viewBox="0 0 10 10" refX="1" refY="5"
+  markerWidth="4.8999999999999995" markerHeight="4.8999999999999995" orient="auto-start-reverse">
+  <path d="M 0 1.5 L 8.5 5 L 0 8.5 Z" fill="#ef4444" opacity="1"/>
+</marker>
+
+<marker id="arr__f59e0b" viewBox="0 0 10 10" refX="1" refY="5"
+  markerWidth="4.8999999999999995" markerHeight="4.8999999999999995" orient="auto-start-reverse">
+  <path d="M 0 1.5 L 8.5 5 L 0 8.5 Z" fill="#f59e0b" opacity="1"/>
+</marker>
+
+<marker id="arr__06b6d4" viewBox="0 0 10 10" refX="1" refY="5"
+  markerWidth="4.8999999999999995" markerHeight="4.8999999999999995" orient="auto-start-reverse">
+  <path d="M 0 1.5 L 8.5 5 L 0 8.5 Z" fill="#06b6d4" opacity="1"/>
+</marker>
+
+<marker id="arr__10b981" viewBox="0 0 10 10" refX="1" refY="5"
+  markerWidth="4.8999999999999995" markerHeight="4.8999999999999995" orient="auto-start-reverse">
+  <path d="M 0 1.5 L 8.5 5 L 0 8.5 Z" fill="#10b981" opacity="1"/>
+</marker>
+    <style>* { box-sizing: border-box; }
+text { user-select: none; }
+
+@keyframes __fadeUp    { from { opacity:0; transform:translateY(16px) scale(.97) } to { opacity:1; transform:translateY(0) scale(1) } }
+@keyframes __fadeDown  { from { opacity:0; transform:translateY(-16px) scale(.97) } to { opacity:1; transform:translateY(0) scale(1) } }
+@keyframes __fadeLeft  { from { opacity:0; transform:translateX(16px) scale(.97) } to { opacity:1; transform:translateX(0) scale(1) } }
+@keyframes __fadeRight { from { opacity:0; transform:translateX(-16px) scale(.97) } to { opacity:1; transform:translateX(0) scale(1) } }
+@keyframes __zoomIn    { from { opacity:0; transform:scale(.6) } 70% { transform:scale(1.04) } to { opacity:1; transform:scale(1) } }
+@keyframes __pop       { from { opacity:0; transform:scale(.5) } 60% { transform:scale(1.12) } 80% { transform:scale(.96) } to { opacity:1; transform:scale(1) } }
+@keyframes __draw      { to   { stroke-dashoffset:0 } }
+@keyframes __pulse     { 0%,100% { transform:scale(1) } 50% { transform:scale(1.05) } }
+@keyframes __glowPulse { 0%,100% { filter:drop-shadow(0 0 4px currentColor) } 50% { filter:drop-shadow(0 0 14px currentColor) drop-shadow(0 0 28px currentColor) } }
+@keyframes __shimmer   { from { background-position:200% center } to { background-position:-200% center } }
+@keyframes __float     { 0%,100% { transform:translateY(0) } 50% { transform:translateY(-6px) } }
+@keyframes __spin      { from { transform:rotate(0deg) } to { transform:rotate(360deg) } }
+
+._a1{animation: __fadeUp 500ms cubic-bezier(0.34,1.56,0.64,1) 0ms 1 forwards;}
+._a2{animation: __fadeUp 500ms cubic-bezier(0.34,1.56,0.64,1) 70ms 1 forwards; opacity:0;}
+._a3{animation: __draw 500ms cubic-bezier(0.34,1.56,0.64,1) 140ms 1 forwards; stroke-dasharray:150.0; stroke-dashoffset:150.0;}
+@keyframes __march_4 { from { stroke-dashoffset:0 } to { stroke-dashoffset:-11 } }
+._a4 { stroke-dasharray:6,5; animation:__march_4 600ms linear 210ms infinite; }
+@keyframes __march_5 { from { stroke-dashoffset:0 } to { stroke-dashoffset:-11 } }
+._a5 { stroke-dasharray:6,5; animation:__march_5 600ms linear 280ms infinite; }
+._a6{animation: __draw 500ms cubic-bezier(0.34,1.56,0.64,1) 350ms 1 forwards; stroke-dasharray:150.0; stroke-dashoffset:150.0;}
+@keyframes __sig_10 {
+  from { stroke-dashoffset:0 }
+  to   { stroke-dashoffset:-227.01975402246876 }
+}
+._sig_10 {
+  stroke-dasharray:30,228;
+  stroke-dashoffset:0;
+  animation:__sig_10 1300ms linear 700ms infinite;
+}
+@keyframes __sig_11 {
+  from { stroke-dashoffset:0 }
+  to   { stroke-dashoffset:-180 }
+}
+._sig_11 {
+  stroke-dasharray:30,180;
+  stroke-dashoffset:0;
+  animation:__sig_11 1300ms linear 770ms infinite;
+}
+@keyframes __sig_12 {
+  from { stroke-dashoffset:0 }
+  to   { stroke-dashoffset:-227.01975402246876 }
+}
+._sig_12 {
+  stroke-dasharray:30,228;
+  stroke-dashoffset:0;
+  animation:__sig_12 1300ms linear 840ms infinite;
+}
+._a10{animation: __zoomIn 600ms cubic-bezier(0.34,1.56,0.64,1) 910ms 1 forwards; opacity:0;}
+._a11{animation: __fadeUp 600ms cubic-bezier(0.34,1.56,0.64,1) 980ms 1 forwards; opacity:0;}
+._a12{animation: __fadeUp 600ms cubic-bezier(0.34,1.56,0.64,1) 1050ms 1 forwards; opacity:0;}
+._a13{animation: __fadeUp 600ms cubic-bezier(0.34,1.56,0.64,1) 1120ms 1 forwards; opacity:0;}
+._a14{animation: __fadeUp 600ms cubic-bezier(0.34,1.56,0.64,1) 1190ms 1 forwards; opacity:0;}
+._a15{animation: __zoomIn 600ms cubic-bezier(0.34,1.56,0.64,1) 1260ms 1 forwards; opacity:0;}
+._a16{animation: __pop 600ms cubic-bezier(0.34,1.56,0.64,1) 1330ms 1 forwards; opacity:0;}
+._a17{animation: __fadeLeft 600ms cubic-bezier(0.34,1.56,0.64,1) 1400ms 1 forwards; opacity:0;}
+._a18{animation: __fadeUp 600ms cubic-bezier(0.34,1.56,0.64,1) 1470ms 1 forwards; opacity:0;}
+._a19{animation: __fadeRight 600ms cubic-bezier(0.34,1.56,0.64,1) 1540ms 1 forwards; opacity:0;}
+._a20{animation: __fadeUp 600ms cubic-bezier(0.34,1.56,0.64,1) 1610ms 1 forwards; opacity:0;}</style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1445" height="719" fill="url(#__bgGrad)"/>
+  
+  <circle cx="216.8" cy="143.8" r="251.6"
+    fill="#6366f1" opacity="0.12" filter="url(#__bg_blur)"/>
+  <circle cx="1228.3" cy="539.3" r="215.7"
+    fill="#8b5cf6" opacity="0.1" filter="url(#__bg_blur)"/>
+  <circle cx="722.5" cy="359.5" r="179.8"
+    fill="#06b6d4" opacity="0.07" filter="url(#__bg_blur)"/>
+
+  
+  <text x="55" y="43"
+    font-size="20" font-weight="700" font-family="'Inter', system-ui, sans-serif"
+    fill="#e2e8f0" letter-spacing="-0.02em">Synchronous vs Event-Driven Agents</text>
+  <text x="55" y="67"
+    font-size="13" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+    fill="#94a3b8">Why chains block and events fly</text>
+  
+  <g opacity="0.7">
+    <g transform="translate(1211.4,33.0) scale(0.0130)" fill="#94a3b8">
+      <path d="m654.53 592.55 276.12 394.95h-113.32l-225.32-322.28v-.02l-33.08-47.31-263.21-376.5h113.32l212.41 303.85z"/>
+<path d="m1094.42 0h-961.84c-73.22 0-132.58 59.36-132.58 132.58v961.84c0 73.22 59.36 132.58 132.58 132.58h961.84c73.22 0 132.58-59.36 132.58-132.58v-961.84c0-73.22-59.36-132.58-132.58-132.58zm-311.8 1040.52-228.01-331.84-285.47 331.84h-73.78l326.49-379.5-326.49-475.17h249.02l215.91 314.23 270.32-314.23h73.78l-311.33 361.9h-.02l338.6 492.77z"/>
+    </g>
+    <text x="1233.4" y="45.0"
+      font-size="15" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#94a3b8" text-anchor="start"
+      letter-spacing="0.01em">x.com/raultotocayo</text>
+  </g>
+
+  <!-- Diagram -->
+  <g transform="translate(55,107)">
+    
+<g id="g_grp_sync" data-group="grp_sync" class="_a1" style="transform-origin:647.5px 68.0px">
+  <rect x="0.0" y="0.0" width="1295.0" height="136.0"
+    rx="18" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.3)" stroke-width="1.25" stroke-dasharray="8,5" opacity="1"/>
+  <text x="647.5" y="20.0"
+    font-size="13" font-weight="600" text-anchor="middle"
+    font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#fca5a5" letter-spacing="0.05em"
+    text-transform="uppercase">Synchronous Chain — agents wait in line</text>
+</g>
+<g id="g_grp_eda" data-group="grp_eda" class="_a2" style="transform-origin:517.5px 336.3px">
+  <rect x="0.0" y="156.0" width="1035.0" height="360.5"
+    rx="18" fill="rgba(6,182,212,0.04)" stroke="rgba(6,182,212,0.3)" stroke-width="1.25" stroke-dasharray="8,5" opacity="1"/>
+  <text x="517.5" y="176.0"
+    font-size="13" font-weight="600" text-anchor="middle"
+    font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#a5f3fc" letter-spacing="0.05em"
+    text-transform="uppercase">Event-Driven — agents work in parallel</text>
+</g>
+    
+<g data-edge="sync_req-sync_a">
+  <path id="ep_sync_req_sync_a_2" d="M 180,68 C 186.67,68.00 205.56,68.00 220,68 C 234.44,68.00 258.88,68.00 266.65,68"
+    fill="none" stroke="#ef4444" stroke-width="2" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)"  class="_a3"/>
+</g>
+<g data-edge="sync_a-sync_b">
+  <path id="ep_sync_a_sync_b_3" d="M 409,68 C 418.00,68.00 448.56,68.00 463,68 C 477.44,68.00 490.21,68.00 495.65,68"
+    fill="none" stroke="#ef4444" stroke-width="2" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)"  class="_a4"/>
+  <rect x="437.6" y="45.3" width="50.8" height="21.5" rx="5" fill="rgba(6,7,15,0.85)" stroke="none"/>
+  <text x="463.0" y="56.0"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#fca5a5">blocks</text>
+</g>
+<g data-edge="sync_b-sync_c">
+  <path id="ep_sync_b_sync_c_4" d="M 709,68 C 715.67,68.00 736.89,68.00 749,68 C 761.11,68.00 776.21,68.00 781.65,68"
+    fill="none" stroke="#ef4444" stroke-width="2" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)"  class="_a5"/>
+  <rect x="723.6" y="45.3" width="50.8" height="21.5" rx="5" fill="rgba(6,7,15,0.85)" stroke="none"/>
+  <text x="749.0" y="56.0"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#fca5a5">blocks</text>
+</g>
+<g data-edge="sync_c-sync_out">
+  <path id="ep_sync_c_sync_out_5" d="M 995,68 C 1001.67,68.00 1021.67,68.00 1035,68 C 1048.33,68.00 1062.89,68.00 1075,68 C 1087.11,68.00 1102.21,68.00 1107.65,68"
+    fill="none" stroke="#ef4444" stroke-width="2" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)"  class="_a6"/>
+</g>
+<g data-edge="eda_req-eda_bus">
+  <path id="ep_eda_req_eda_bus_6" d="M 180,336.25 C 186.67,336.25 208.04,336.25 220,336.25 C 231.96,336.25 246.44,336.25 251.73125,336.25"
+    fill="none" stroke="#f59e0b" stroke-width="2.25" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__f59e0b)" />
+  <rect x="197.5" y="313.5" width="45.0" height="21.5" rx="5" fill="rgba(6,7,15,0.85)" stroke="none"/>
+  <text x="220.0" y="324.3"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#fde68a">event</text>
+  <circle r="4" fill="#f59e0b" opacity="0.85">
+    <animateMotion dur="800ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_eda_req_eda_bus_6"/>
+    </animateMotion>
+  </circle>
+  <circle r="4" fill="#f59e0b" opacity="0.85">
+    <animateMotion dur="800ms" repeatCount="indefinite"
+      begin="400ms">
+      <mpath href="#ep_eda_req_eda_bus_6"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="eda_bus-eda_a">
+  <path id="ep_eda_bus_eda_a_7" d="M 376.98230088495575,369.25 C 391.32,382.58 437.49,435.92 463,449.25 C 488.51,462.58 518.89,449.25 530.06875,449.25"
+    fill="none" stroke="#06b6d4" stroke-width="1.75" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__06b6d4)" />
+  <rect x="428.9" y="426.5" width="68.2" height="21.5" rx="5" fill="rgba(6,7,15,0.85)" stroke="none"/>
+  <text x="463.0" y="437.3"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#a5f3fc">subscribe</text>
+  <circle r="3" fill="#06b6d4" opacity="0.85">
+    <animateMotion dur="700ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_eda_bus_eda_a_7"/>
+    </animateMotion>
+  </circle>
+  <circle r="3" fill="#06b6d4" opacity="0.85">
+    <animateMotion dur="700ms" repeatCount="indefinite"
+      begin="350ms">
+      <mpath href="#ep_eda_bus_eda_a_7"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="eda_bus-eda_b">
+  <path id="ep_eda_bus_eda_b_8" d="M 423,336.25 C 429.67,336.25 445.16,336.25 463,336.25 C 480.84,336.25 518.89,336.25 530.06875,336.25"
+    fill="none" stroke="#06b6d4" stroke-width="1.75" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__06b6d4)" />
+  <rect x="428.9" y="313.5" width="68.2" height="21.5" rx="5" fill="rgba(6,7,15,0.85)" stroke="none"/>
+  <text x="463.0" y="324.3"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#a5f3fc">subscribe</text>
+  <circle r="3" fill="#06b6d4" opacity="0.85">
+    <animateMotion dur="700ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_eda_bus_eda_b_8"/>
+    </animateMotion>
+  </circle>
+  <circle r="3" fill="#06b6d4" opacity="0.85">
+    <animateMotion dur="700ms" repeatCount="indefinite"
+      begin="350ms">
+      <mpath href="#ep_eda_bus_eda_b_8"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="eda_bus-eda_c">
+  <path id="ep_eda_bus_eda_c_9" d="M 376.98230088495575,303.25 C 391.32,289.92 437.49,236.58 463,223.25 C 488.51,209.92 518.89,223.25 530.06875,223.25"
+    fill="none" stroke="#06b6d4" stroke-width="1.75" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__06b6d4)" />
+  <rect x="428.9" y="200.5" width="68.2" height="21.5" rx="5" fill="rgba(6,7,15,0.85)" stroke="none"/>
+  <text x="463.0" y="211.3"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#a5f3fc">subscribe</text>
+  <circle r="3" fill="#06b6d4" opacity="0.85">
+    <animateMotion dur="700ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_eda_bus_eda_c_9"/>
+    </animateMotion>
+  </circle>
+  <circle r="3" fill="#06b6d4" opacity="0.85">
+    <animateMotion dur="700ms" repeatCount="indefinite"
+      begin="350ms">
+      <mpath href="#ep_eda_bus_eda_c_9"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="eda_a-eda_out">
+  <path id="ep_eda_a_eda_out_10" d="M 675.5,449.25 C 687.75,449.25 720.60,462.01 749,449.25 C 777.40,436.49 829.76,385.43 845.9138206609722,372.66775010706397"
+    fill="none" stroke="#10b981" stroke-width="1.5"
+    stroke-dasharray="5,6" filter="url(#__glowEdge)"
+    opacity="0.22" marker-end="url(#arr__10b981)" />
+  <path d="M 675.5,449.25 C 687.75,449.25 720.60,462.01 749,449.25 C 777.40,436.49 829.76,385.43 845.9138206609722,372.66775010706397"
+    fill="none" stroke="#10b981" stroke-width="2.3"
+    class="_sig_10" opacity="1"/>
+</g>
+<g data-edge="eda_b-eda_out">
+  <path id="ep_eda_b_eda_out_11" d="M 675.5,336.25 C 687.75,336.25 725.50,336.25 749,336.25 C 772.50,336.25 805.24,336.25 816.4875,336.25"
+    fill="none" stroke="#10b981" stroke-width="1.5"
+    stroke-dasharray="5,6" filter="url(#__glowEdge)"
+    opacity="0.22" marker-end="url(#arr__10b981)" />
+  <path d="M 675.5,336.25 C 687.75,336.25 725.50,336.25 749,336.25 C 772.50,336.25 805.24,336.25 816.4875,336.25"
+    fill="none" stroke="#10b981" stroke-width="2.3"
+    class="_sig_11" opacity="1"/>
+</g>
+<g data-edge="eda_c-eda_out">
+  <path id="ep_eda_c_eda_out_12" d="M 675.5,223.25 C 687.75,223.25 720.60,210.49 749,223.25 C 777.40,236.01 829.76,287.07 845.9138206609722,299.83224989293603"
+    fill="none" stroke="#10b981" stroke-width="1.5"
+    stroke-dasharray="5,6" filter="url(#__glowEdge)"
+    opacity="0.22" marker-end="url(#arr__10b981)" />
+  <path d="M 675.5,223.25 C 687.75,223.25 720.60,210.49 749,223.25 C 777.40,236.01 829.76,287.07 845.9138206609722,299.83224989293603"
+    fill="none" stroke="#10b981" stroke-width="2.3"
+    class="_sig_12" opacity="1"/>
+</g>
+    
+<g id="n_sync_req" data-node="sync_req" class="_a10" style="transform-origin:110px 68px">
+  <polygon points="58,35 198,35 162,101 22,101" fill="rgba(168,85,247,0.18)" stroke="#a855f7" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="110" y="64.72" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#e9d5ff" letter-spacing="0.01em">Request</text><text x="110" y="82.92" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#e9d5ff" letter-spacing="0.01em">arrives</text>
+</g>
+<g id="n_sync_a" data-node="sync_a" class="_a11" style="transform-origin:341.5px 68px">
+  <rect x="274" y="36.5" width="135" height="63" rx="14"
+    fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="341.5" y="64.98" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" letter-spacing="0.01em">Agent A</text><text x="341.5" y="81.78" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" letter-spacing="0.01em">process (2s)</text>
+</g>
+<g id="n_sync_b" data-node="sync_b" class="_a12" style="transform-origin:606px 68px">
+  <rect x="503" y="36.5" width="206" height="63" rx="14"
+    fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="606" y="64.98" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" letter-spacing="0.01em">Agent B</text><text x="606" y="81.78" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" letter-spacing="0.01em">blocked → process (8s)</text>
+</g>
+<g id="n_sync_c" data-node="sync_c" class="_a13" style="transform-origin:892px 68px">
+  <rect x="789" y="36.5" width="206" height="63" rx="14"
+    fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="892" y="64.98" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" letter-spacing="0.01em">Agent C</text><text x="892" y="81.78" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" letter-spacing="0.01em">blocked → process (3s)</text>
+</g>
+<g id="n_sync_out" data-node="sync_out" class="_a14" style="transform-origin:1185px 68px">
+  <rect x="1115" y="35" width="140" height="66" rx="33"
+    fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="1185" y="64.72" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" letter-spacing="0.01em">Response</text><text x="1185" y="82.92" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" letter-spacing="0.01em">13s total ❌</text>
+</g>
+<g id="n_eda_req" data-node="eda_req" class="_a15" style="transform-origin:110px 336.25px">
+  <polygon points="58,303.25 198,303.25 162,369.25 22,369.25" fill="rgba(168,85,247,0.18)" stroke="#a855f7" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="110" y="332.97" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#e9d5ff" letter-spacing="0.01em">Request</text><text x="110" y="351.17" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#e9d5ff" letter-spacing="0.01em">arrives</text>
+</g>
+<g id="n_eda_bus" data-node="eda_bus" class="_a16" style="transform-origin:341.5px 336.25px">
+  <polygon points="260,336.25 280.375,303.25 402.625,303.25 423,336.25 402.625,369.25 280.375,369.25" fill="rgba(245,158,11,0.2)" stroke="#f59e0b" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="341.5" y="332.97" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fde68a" letter-spacing="0.01em">Event Bus</text><text x="341.5" y="351.17" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fde68a" letter-spacing="0.01em">publish once</text>
+</g>
+<g id="n_eda_a" data-node="eda_a" class="_a17" style="transform-origin:606px 449.25px">
+  <rect x="536.5" y="417.75" width="139" height="63" rx="14"
+    fill="rgba(6,182,212,0.15)" stroke="#06b6d4" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="606" y="446.23" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#a5f3fc" letter-spacing="0.01em">Agent A</text><text x="606" y="463.03" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#a5f3fc" letter-spacing="0.01em">parallel (2s)</text>
+</g>
+<g id="n_eda_b" data-node="eda_b" class="_a18" style="transform-origin:606px 336.25px">
+  <rect x="536.5" y="304.75" width="139" height="63" rx="14"
+    fill="rgba(6,182,212,0.15)" stroke="#06b6d4" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="606" y="333.23" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#a5f3fc" letter-spacing="0.01em">Agent B</text><text x="606" y="350.03" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#a5f3fc" letter-spacing="0.01em">parallel (8s)</text>
+</g>
+<g id="n_eda_c" data-node="eda_c" class="_a19" style="transform-origin:606px 223.25px">
+  <rect x="536.5" y="191.75" width="139" height="63" rx="14"
+    fill="rgba(6,182,212,0.15)" stroke="#06b6d4" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="606" y="220.23" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#a5f3fc" letter-spacing="0.01em">Agent C</text><text x="606" y="237.03" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#a5f3fc" letter-spacing="0.01em">parallel (3s)</text>
+</g>
+<g id="n_eda_out" data-node="eda_out" class="_a20" style="transform-origin:892px 336.25px">
+  <rect x="822" y="303.25" width="140" height="66" rx="33"
+    fill="rgba(16,185,129,0.18)" stroke="#10b981" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="892" y="332.97" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#6ee7b7" letter-spacing="0.01em">Response</text><text x="892" y="351.17" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#6ee7b7" letter-spacing="0.01em">8s total ✓</text>
+</g>
+  </g>
+</svg>
