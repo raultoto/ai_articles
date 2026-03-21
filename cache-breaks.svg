@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 858 634" width="858" height="634">
+  <defs>
+    <radialGradient id="__bgGrad" cx="40%" cy="35%" r="75%" gradientUnits="userSpaceOnUse" gradientTransform="scale(858,634)">
+    <stop offset="0%" stop-color="#06070f"/>
+    <stop offset="50%" stop-color="#0d0f1e"/>
+    <stop offset="100%" stop-color="#06070f"/>
+  </radialGradient>
+<filter id="__bg_blur"><feGaussianBlur stdDeviation="60"/></filter>
+
+<filter id="__shadow" x="-20%" y="-20%" width="140%" height="160%" color-interpolation-filters="sRGB">
+  <feDropShadow dx="0" dy="8" stdDeviation="12"
+    flood-color="#000" flood-opacity="0.2"/>
+  <feDropShadow dx="0" dy="3.2" stdDeviation="4.800000000000001"
+    flood-color="#000" flood-opacity="0.15"/>
+</filter>
+
+<filter id="__shadowSm" x="-20%" y="-20%" width="140%" height="160%" color-interpolation-filters="sRGB">
+  <feDropShadow dx="0" dy="4" stdDeviation="6"
+    flood-color="#000" flood-opacity="0.13999999999999999"/>
+  <feDropShadow dx="0" dy="1.6" stdDeviation="2.4000000000000004"
+    flood-color="#000" flood-opacity="0.105"/>
+</filter>
+
+<filter id="__glass" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+  <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise"/>
+  <feColorMatrix in="noise" type="saturate" values="0" result="grayNoise"/>
+  <feBlend in="SourceGraphic" in2="grayNoise" mode="overlay" result="blended"/>
+  <feComposite in="blended" in2="SourceGraphic" operator="atop"/>
+</filter>
+
+<filter id="__glow" x="-60%" y="-60%" width="220%" height="220%" color-interpolation-filters="sRGB">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur1"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur2"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur3"/>
+  <feMerge>
+    <feMergeNode in="blur3"/>
+    <feMergeNode in="blur2"/>
+    <feMergeNode in="blur1"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+<filter id="__glowEdge" x="-60%" y="-60%" width="220%" height="220%" color-interpolation-filters="sRGB">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" result="blur1"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur2"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur3"/>
+  <feMerge>
+    <feMergeNode in="blur3"/>
+    <feMergeNode in="blur2"/>
+    <feMergeNode in="blur1"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+<marker id="arr__ef4444" viewBox="0 0 10 10" refX="1" refY="5"
+  markerWidth="4.8999999999999995" markerHeight="4.8999999999999995" orient="auto-start-reverse">
+  <path d="M 0 1.5 L 8.5 5 L 0 8.5 Z" fill="#ef4444" opacity="1"/>
+</marker>
+    <style>* { box-sizing: border-box; }
+text { user-select: none; }
+
+@keyframes __fadeUp    { from { opacity:0; transform:translateY(16px) scale(.97) } to { opacity:1; transform:translateY(0) scale(1) } }
+@keyframes __fadeDown  { from { opacity:0; transform:translateY(-16px) scale(.97) } to { opacity:1; transform:translateY(0) scale(1) } }
+@keyframes __fadeLeft  { from { opacity:0; transform:translateX(16px) scale(.97) } to { opacity:1; transform:translateX(0) scale(1) } }
+@keyframes __fadeRight { from { opacity:0; transform:translateX(-16px) scale(.97) } to { opacity:1; transform:translateX(0) scale(1) } }
+@keyframes __zoomIn    { from { opacity:0; transform:scale(.6) } 70% { transform:scale(1.04) } to { opacity:1; transform:scale(1) } }
+@keyframes __pop       { from { opacity:0; transform:scale(.5) } 60% { transform:scale(1.12) } 80% { transform:scale(.96) } to { opacity:1; transform:scale(1) } }
+@keyframes __draw      { to   { stroke-dashoffset:0 } }
+@keyframes __pulse     { 0%,100% { transform:scale(1) } 50% { transform:scale(1.05) } }
+@keyframes __glowPulse { 0%,100% { filter:drop-shadow(0 0 4px currentColor) } 50% { filter:drop-shadow(0 0 14px currentColor) drop-shadow(0 0 28px currentColor) } }
+@keyframes __shimmer   { from { background-position:200% center } to { background-position:-200% center } }
+@keyframes __float     { 0%,100% { transform:translateY(0) } 50% { transform:translateY(-6px) } }
+@keyframes __spin      { from { transform:rotate(0deg) } to { transform:rotate(360deg) } }
+
+._a41{animation: __fadeUp 500ms cubic-bezier(0.34,1.56,0.64,1) 50ms 1 forwards; opacity:0;}
+@keyframes __march_42 { from { stroke-dashoffset:0 } to { stroke-dashoffset:-10 } }
+._a42 { stroke-dasharray:6,4; animation:__march_42 600ms linear 0ms infinite; }
+@keyframes __march_43 { from { stroke-dashoffset:0 } to { stroke-dashoffset:-10 } }
+._a43 { stroke-dasharray:6,4; animation:__march_43 600ms linear 0ms infinite; }
+@keyframes __march_44 { from { stroke-dashoffset:0 } to { stroke-dashoffset:-10 } }
+._a44 { stroke-dasharray:6,4; animation:__march_44 600ms linear 0ms infinite; }
+@keyframes __march_45 { from { stroke-dashoffset:0 } to { stroke-dashoffset:-10 } }
+._a45 { stroke-dasharray:6,4; animation:__march_45 600ms linear 0ms infinite; }
+._a46{animation: __glowPulse 600ms cubic-bezier(0.34,1.56,0.64,1) 0ms 1 forwards;}
+._a47{animation: __pop 600ms cubic-bezier(0.34,1.56,0.64,1) 100ms 1 forwards;}
+._a48{animation: __pop 600ms cubic-bezier(0.34,1.56,0.64,1) 180ms 1 forwards;}
+._a49{animation: __pop 600ms cubic-bezier(0.34,1.56,0.64,1) 260ms 1 forwards;}
+._a50{animation: __pop 600ms cubic-bezier(0.34,1.56,0.64,1) 340ms 1 forwards;}
+._a51{animation: __pulse 600ms cubic-bezier(0.34,1.56,0.64,1) 400ms 1 forwards;}</style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="858" height="634" fill="url(#__bgGrad)"/>
+  
+  <circle cx="128.7" cy="126.8" r="221.9"
+    fill="#6366f1" opacity="0.12" filter="url(#__bg_blur)"/>
+  <circle cx="729.3" cy="475.5" r="190.2"
+    fill="#8b5cf6" opacity="0.1" filter="url(#__bg_blur)"/>
+  <circle cx="429.0" cy="317.0" r="158.5"
+    fill="#06b6d4" opacity="0.07" filter="url(#__bg_blur)"/>
+
+  
+  <text x="55" y="43"
+    font-size="20" font-weight="700" font-family="'Inter', system-ui, sans-serif"
+    fill="#e2e8f0" letter-spacing="-0.02em">What Breaks the Cache?</text>
+  <text x="55" y="67"
+    font-size="13" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+    fill="#94a3b8">Common mistakes that invalidate the entire prompt cache</text>
+  
+  <text x="803" y="45"
+    font-size="15" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+    fill="#94a3b8" text-anchor="end" opacity="0.7"
+    letter-spacing="0.01em">x.com/raultotocayo</text>
+
+  <!-- Diagram -->
+  <g transform="translate(55,107)">
+    
+<g id="g_grp_breaks" data-group="grp_breaks" class="_a41" style="transform-origin:354.0px 216.0px">
+  <rect x="233.0" y="0.0" width="242.0" height="432.0"
+    rx="18" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.25)" stroke-width="1.25" stroke-dasharray="8,5" opacity="1"/>
+  <text x="354.0" y="20.0"
+    font-size="12" font-weight="600" text-anchor="middle"
+    font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#fca5a5" letter-spacing="0.05em"
+    text-transform="uppercase">Cache invalidation triggers</text>
+</g>
+    
+<g data-edge="warm-timestamp">
+  <path id="ep_warm_timestamp_1" d="M 101.38349514563106,249 C 116.65,269.25 171.06,350.25 193,370.5 C 214.94,390.75 220.74,370.50 233,370.5 C 245.26,370.50 260.97,370.50 266.56875,370.5"
+    fill="none" stroke="#ef4444" stroke-width="1.75" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)" />
+  <circle r="3" fill="#ef4444" opacity="0.85">
+    <animateMotion dur="800ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_warm_timestamp_1"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="warm-add_tool">
+  <path id="ep_warm_add_tool_2" d="M 151.1504854368932,249 C 158.13,252.08 179.36,264.42 193,267.5 C 206.64,270.58 220.57,267.50 233,267.5 C 245.43,267.50 261.81,267.50 267.56875,267.5"
+    fill="none" stroke="#ef4444" stroke-width="1.75" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)" />
+  <circle r="3" fill="#ef4444" opacity="0.85">
+    <animateMotion dur="800ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_warm_add_tool_2"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="warm-switch_model">
+  <path id="ep_warm_switch_model_3" d="M 151.1504854368932,183 C 158.13,179.92 179.36,167.58 193,164.5 C 206.64,161.42 220.74,164.50 233,164.5 C 245.26,164.50 260.97,164.50 266.56875,164.5"
+    fill="none" stroke="#ef4444" stroke-width="1.75" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)" />
+  <circle r="3" fill="#ef4444" opacity="0.85">
+    <animateMotion dur="800ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_warm_switch_model_3"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="warm-shuffle_tools">
+  <path id="ep_warm_shuffle_tools_4" d="M 101.38349514563106,183 C 116.65,162.75 171.06,81.75 193,61.5 C 214.94,41.25 220.74,61.50 233,61.5 C 245.26,61.50 260.97,61.50 266.56875,61.5"
+    fill="none" stroke="#ef4444" stroke-width="1.75" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)" />
+  <circle r="3" fill="#ef4444" opacity="0.85">
+    <animateMotion dur="800ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_warm_shuffle_tools_4"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="timestamp-cold">
+  <path id="ep_timestamp_cold_5" d="M 435,370.5 C 441.67,370.50 461.67,370.50 475,370.5 C 488.33,370.50 493.62,390.02 515,370.5 C 536.38,350.98 588.58,272.92 603.297620585524,253.40143879430508"
+    fill="none" stroke="#ef4444" stroke-width="1.5" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)"  class="_a42"/>
+</g>
+<g data-edge="add_tool-cold">
+  <path id="ep_add_tool_cold_6" d="M 434,267.5 C 440.83,267.50 461.50,267.50 475,267.5 C 488.50,267.50 502.20,270.21 515,267.5 C 527.80,264.79 545.67,253.94 551.8076767980159,251.22879523521186"
+    fill="none" stroke="#ef4444" stroke-width="1.5" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)"  class="_a43"/>
+</g>
+<g data-edge="switch_model-cold">
+  <path id="ep_switch_model_cold_7" d="M 435,164.5 C 441.67,164.50 461.67,164.50 475,164.5 C 488.33,164.50 502.20,161.79 515,164.5 C 527.80,167.21 545.67,178.06 551.8076767980159,180.77120476478814"
+    fill="none" stroke="#ef4444" stroke-width="1.5" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)"  class="_a44"/>
+</g>
+<g data-edge="shuffle_tools-cold">
+  <path id="ep_shuffle_tools_cold_8" d="M 435,61.5 C 441.67,61.50 461.67,61.50 475,61.5 C 488.33,61.50 493.62,41.98 515,61.5 C 536.38,81.02 588.58,159.08 603.297620585524,178.59856120569492"
+    fill="none" stroke="#ef4444" stroke-width="1.5" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)"  class="_a45"/>
+</g>
+    
+<g id="n_warm" data-node="warm" class="_a46" style="transform-origin:76.5px 216px">
+  <polygon points="0,216 19.125,183 133.875,183 153,216 133.875,249 19.125,249" fill="rgba(16,185,129,0.18)" stroke="#10b981" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="76.5" y="213.94" text-anchor="middle"
+      font-size="14" font-weight="700" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#6ee7b7" letter-spacing="0.01em">Warm Cache</text><text x="76.5" y="233.54" text-anchor="middle"
+      font-size="11.5" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#6ee7b7" opacity="0.6">90% cheaper reads</text>
+</g>
+<g id="n_timestamp" data-node="timestamp" class="_a47" style="transform-origin:354px 370.5px">
+  <rect x="273" y="339" width="162" height="63" rx="14"
+    fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="354" y="367.48" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" letter-spacing="0.01em">Add timestamp</text><text x="354" y="384.28" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" letter-spacing="0.01em">to system prompt</text>
+</g>
+<g id="n_add_tool" data-node="add_tool" class="_a48" style="transform-origin:354px 267.5px">
+  <rect x="274" y="236" width="160" height="63" rx="14"
+    fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="354" y="264.48" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" letter-spacing="0.01em">Add/remove tool</text><text x="354" y="281.28" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" letter-spacing="0.01em">mid-session</text>
+</g>
+<g id="n_switch_model" data-node="switch_model" class="_a49" style="transform-origin:354px 164.5px">
+  <rect x="273" y="133" width="162" height="63" rx="14"
+    fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="354" y="161.48" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" letter-spacing="0.01em">Switch models</text><text x="354" y="178.28" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" letter-spacing="0.01em">mid-conversation</text>
+</g>
+<g id="n_shuffle_tools" data-node="shuffle_tools" class="_a50" style="transform-origin:354px 61.5px">
+  <rect x="273" y="30" width="162" height="63" rx="14"
+    fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="354" y="58.48" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" letter-spacing="0.01em">Shuffle tool</text><text x="354" y="75.28" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" letter-spacing="0.01em">definition order</text>
+</g>
+<g id="n_cold" data-node="cold" class="_a51" style="transform-origin:631.5px 216px">
+  <polygon points="555,216 574.125,183 688.875,183 708,216 688.875,249 574.125,249" fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="631.5" y="213.94" text-anchor="middle"
+      font-size="14" font-weight="700" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" letter-spacing="0.01em">Cold Cache</text><text x="631.5" y="233.54" text-anchor="middle"
+      font-size="11.5" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" opacity="0.6">full price — reprocess everything</text>
+</g>
+  </g>
+</svg>

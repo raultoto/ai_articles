@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 725 989" width="725" height="989">
+  <defs>
+    <radialGradient id="__bgGrad" cx="40%" cy="35%" r="75%" gradientUnits="userSpaceOnUse" gradientTransform="scale(725,989)">
+    <stop offset="0%" stop-color="#06070f"/>
+    <stop offset="50%" stop-color="#0d0f1e"/>
+    <stop offset="100%" stop-color="#06070f"/>
+  </radialGradient>
+<filter id="__bg_blur"><feGaussianBlur stdDeviation="60"/></filter>
+
+<filter id="__shadow" x="-20%" y="-20%" width="140%" height="160%" color-interpolation-filters="sRGB">
+  <feDropShadow dx="0" dy="8" stdDeviation="12"
+    flood-color="#000" flood-opacity="0.2"/>
+  <feDropShadow dx="0" dy="3.2" stdDeviation="4.800000000000001"
+    flood-color="#000" flood-opacity="0.15"/>
+</filter>
+
+<filter id="__shadowSm" x="-20%" y="-20%" width="140%" height="160%" color-interpolation-filters="sRGB">
+  <feDropShadow dx="0" dy="4" stdDeviation="6"
+    flood-color="#000" flood-opacity="0.13999999999999999"/>
+  <feDropShadow dx="0" dy="1.6" stdDeviation="2.4000000000000004"
+    flood-color="#000" flood-opacity="0.105"/>
+</filter>
+
+<filter id="__glass" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+  <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise"/>
+  <feColorMatrix in="noise" type="saturate" values="0" result="grayNoise"/>
+  <feBlend in="SourceGraphic" in2="grayNoise" mode="overlay" result="blended"/>
+  <feComposite in="blended" in2="SourceGraphic" operator="atop"/>
+</filter>
+
+<filter id="__glow" x="-60%" y="-60%" width="220%" height="220%" color-interpolation-filters="sRGB">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur1"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur2"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur3"/>
+  <feMerge>
+    <feMergeNode in="blur3"/>
+    <feMergeNode in="blur2"/>
+    <feMergeNode in="blur1"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+<filter id="__glowEdge" x="-60%" y="-60%" width="220%" height="220%" color-interpolation-filters="sRGB">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" result="blur1"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur2"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur3"/>
+  <feMerge>
+    <feMergeNode in="blur3"/>
+    <feMergeNode in="blur2"/>
+    <feMergeNode in="blur1"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+<marker id="arr__6366f1" viewBox="0 0 10 10" refX="1" refY="5"
+  markerWidth="4.8999999999999995" markerHeight="4.8999999999999995" orient="auto-start-reverse">
+  <path d="M 0 1.5 L 8.5 5 L 0 8.5 Z" fill="#6366f1" opacity="1"/>
+</marker>
+
+<marker id="arr__f59e0b" viewBox="0 0 10 10" refX="1" refY="5"
+  markerWidth="4.8999999999999995" markerHeight="4.8999999999999995" orient="auto-start-reverse">
+  <path d="M 0 1.5 L 8.5 5 L 0 8.5 Z" fill="#f59e0b" opacity="1"/>
+</marker>
+
+<marker id="arr__10b981" viewBox="0 0 10 10" refX="1" refY="5"
+  markerWidth="4.8999999999999995" markerHeight="4.8999999999999995" orient="auto-start-reverse">
+  <path d="M 0 1.5 L 8.5 5 L 0 8.5 Z" fill="#10b981" opacity="1"/>
+</marker>
+
+<marker id="arr__ef4444" viewBox="0 0 10 10" refX="1" refY="5"
+  markerWidth="4.8999999999999995" markerHeight="4.8999999999999995" orient="auto-start-reverse">
+  <path d="M 0 1.5 L 8.5 5 L 0 8.5 Z" fill="#ef4444" opacity="1"/>
+</marker>
+    <style>* { box-sizing: border-box; }
+text { user-select: none; }
+
+@keyframes __fadeUp    { from { opacity:0; transform:translateY(16px) scale(.97) } to { opacity:1; transform:translateY(0) scale(1) } }
+@keyframes __fadeDown  { from { opacity:0; transform:translateY(-16px) scale(.97) } to { opacity:1; transform:translateY(0) scale(1) } }
+@keyframes __fadeLeft  { from { opacity:0; transform:translateX(16px) scale(.97) } to { opacity:1; transform:translateX(0) scale(1) } }
+@keyframes __fadeRight { from { opacity:0; transform:translateX(-16px) scale(.97) } to { opacity:1; transform:translateX(0) scale(1) } }
+@keyframes __zoomIn    { from { opacity:0; transform:scale(.6) } 70% { transform:scale(1.04) } to { opacity:1; transform:scale(1) } }
+@keyframes __pop       { from { opacity:0; transform:scale(.5) } 60% { transform:scale(1.12) } 80% { transform:scale(.96) } to { opacity:1; transform:scale(1) } }
+@keyframes __draw      { to   { stroke-dashoffset:0 } }
+@keyframes __pulse     { 0%,100% { transform:scale(1) } 50% { transform:scale(1.05) } }
+@keyframes __glowPulse { 0%,100% { filter:drop-shadow(0 0 4px currentColor) } 50% { filter:drop-shadow(0 0 14px currentColor) drop-shadow(0 0 28px currentColor) } }
+@keyframes __shimmer   { from { background-position:200% center } to { background-position:-200% center } }
+@keyframes __float     { 0%,100% { transform:translateY(0) } 50% { transform:translateY(-6px) } }
+@keyframes __spin      { from { transform:rotate(0deg) } to { transform:rotate(360deg) } }
+
+._a1{animation: __fadeUp 500ms cubic-bezier(0.34,1.56,0.64,1) 0ms 1 forwards;}
+._a2{animation: __fadeUp 500ms cubic-bezier(0.34,1.56,0.64,1) 100ms 1 forwards; opacity:0;}
+@keyframes __blink_3 { 0%,100% { opacity:0.15 } 50% { opacity:1 } }
+._a3 { stroke-dasharray:5,6; animation:__blink_3 1200ms ease-in-out 0ms infinite; }
+._a4{animation: __fadeUp 600ms cubic-bezier(0.34,1.56,0.64,1) 400ms 1 forwards; opacity:0;}
+._a5{animation: __fadeUp 600ms cubic-bezier(0.34,1.56,0.64,1) 400ms 1 forwards; opacity:0;}
+._a6{animation: __fadeUp 600ms cubic-bezier(0.34,1.56,0.64,1) 0ms 1 forwards;}
+._a7{animation: __fadeUp 600ms cubic-bezier(0.34,1.56,0.64,1) 80ms 1 forwards; opacity:0;}
+._a8{animation: __fadeUp 600ms cubic-bezier(0.34,1.56,0.64,1) 160ms 1 forwards; opacity:0;}
+._a9{animation: __fadeUp 600ms cubic-bezier(0.34,1.56,0.64,1) 240ms 1 forwards; opacity:0;}
+._a10{animation: __glowPulse 600ms cubic-bezier(0.34,1.56,0.64,1) 400ms 1 forwards;}
+._a11{animation: __pulse 600ms cubic-bezier(0.34,1.56,0.64,1) 400ms 1 forwards;}</style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="725" height="989" fill="url(#__bgGrad)"/>
+  
+  <circle cx="108.8" cy="197.8" r="253.7"
+    fill="#6366f1" opacity="0.12" filter="url(#__bg_blur)"/>
+  <circle cx="616.3" cy="741.8" r="217.5"
+    fill="#8b5cf6" opacity="0.1" filter="url(#__bg_blur)"/>
+  <circle cx="362.5" cy="494.5" r="181.3"
+    fill="#06b6d4" opacity="0.07" filter="url(#__bg_blur)"/>
+
+  
+  <text x="55" y="43"
+    font-size="20" font-weight="700" font-family="'Inter', system-ui, sans-serif"
+    fill="#e2e8f0" letter-spacing="-0.02em">Prompt Layout — Static First, Dynamic Last</text>
+  <text x="55" y="67"
+    font-size="13" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+    fill="#94a3b8">How Claude Code orders its prompt to maximize cache hits</text>
+  
+  <text x="670" y="45"
+    font-size="15" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+    fill="#94a3b8" text-anchor="end" opacity="0.7"
+    letter-spacing="0.01em">x.com/raultotocayo</text>
+
+  <!-- Diagram -->
+  <g transform="translate(55,107)">
+    
+<g id="g_grp_static" data-group="grp_static" class="_a1" style="transform-origin:405.0px 146.0px">
+  <rect x="235.0" y="0.0" width="340.0" height="292.0"
+    rx="18" fill="rgba(99,102,241,0.04)" stroke="rgba(99,102,241,0.3)" stroke-width="1.25" stroke-dasharray="8,5" opacity="1"/>
+  <text x="405.0" y="20.0"
+    font-size="12" font-weight="600" text-anchor="middle"
+    font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#c7d2fe" letter-spacing="0.05em"
+    text-transform="uppercase">Static — never changes mid-session</text>
+</g>
+<g id="g_grp_dynamic" data-group="grp_dynamic" class="_a2" style="transform-origin:410.0px 508.0px">
+  <rect x="245.0" y="362.0" width="330.0" height="292.0"
+    rx="18" fill="rgba(245,158,11,0.04)" stroke="rgba(245,158,11,0.3)" stroke-width="1.25" stroke-dasharray="8,5" opacity="1"/>
+  <text x="410.0" y="382.0"
+    font-size="12" font-weight="600" text-anchor="middle"
+    font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#fde68a" letter-spacing="0.05em"
+    text-transform="uppercase">Dynamic — grows each turn</text>
+</g>
+    
+<g data-edge="system-claudemd">
+  <path id="ep_system_claudemd_2" d="M 405.5128205128205,121 C 406.26,126.83 409.25,145.56 410,156 C 410.75,166.44 410.00,179.04 410,183.65"
+    fill="none" stroke="#6366f1" stroke-width="2" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__6366f1)" />
+  <circle r="3" fill="#6366f1" opacity="0.85">
+    <animateMotion dur="900ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_system_claudemd_2"/>
+    </animateMotion>
+  </circle>
+  <circle r="3" fill="#6366f1" opacity="0.85">
+    <animateMotion dur="900ms" repeatCount="indefinite"
+      begin="450ms">
+      <mpath href="#ep_system_claudemd_2"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="claudemd-session">
+  <path id="ep_claudemd_session_3" d="M 410,257 C 410.00,262.83 410.00,280.33 410,292 C 410.00,303.67 410.00,315.33 410,327 C 410.00,338.67 410.00,351.56 410,362 C 410.00,372.44 410.00,385.04 410,389.65"
+    fill="none" stroke="#6366f1" stroke-width="2" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__6366f1)" />
+  <circle r="3" fill="#6366f1" opacity="0.85">
+    <animateMotion dur="900ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_claudemd_session_3"/>
+    </animateMotion>
+  </circle>
+  <circle r="3" fill="#6366f1" opacity="0.85">
+    <animateMotion dur="900ms" repeatCount="indefinite"
+      begin="450ms">
+      <mpath href="#ep_claudemd_session_3"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="session-messages">
+  <path id="ep_session_messages_4" d="M 410,463 C 410.00,468.83 410.00,487.86 410,498 C 410.00,508.14 410.00,519.51 410,523.8125"
+    fill="none" stroke="#f59e0b" stroke-width="2.5" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__f59e0b)"  class="_a3"/>
+  <rect x="357.3" y="474.6" width="105.3" height="22.9" rx="5" fill="rgba(6,7,15,0.85)" stroke="none"/>
+  <text x="410.0" y="486.0"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="11" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#fde68a">cache boundary</text>
+</g>
+<g data-edge="system-cache_prefix">
+  <path id="ep_system_cache_prefix_5" d="M 360.03205128205127,121 C 354.61,126.83 353.29,144.08 327.5,156 C 301.71,167.92 225.65,186.44 205.28161213512257,192.5312104387326"
+    fill="none" stroke="#10b981" stroke-width="1.5" stroke-dasharray="5,3" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__10b981)"  class="_a4"/>
+</g>
+<g data-edge="messages-new_tokens">
+  <path id="ep_messages_new_tokens_6" d="M 410,619 C 410.00,624.83 410.00,642.33 410,654 C 410.00,665.67 410.00,678.25 410,689 C 410.00,699.75 410.00,713.57 410,718.4875"
+    fill="none" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="5,3" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)"  class="_a5"/>
+</g>
+    
+<g id="n_system" data-node="system" class="_a6" style="transform-origin:400px 78px">
+  <rect x="270" y="35" width="260" height="86" rx="14"
+    fill="rgba(99,102,241,0.15)" stroke="#6366f1" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="400" y="66.14" text-anchor="middle"
+      font-size="14" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#c7d2fe" letter-spacing="0.01em">① System Prompt</text><text x="400" y="85.74" text-anchor="middle"
+      font-size="14" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#c7d2fe" letter-spacing="0.01em">&amp; Tools</text><text x="400" y="105.34" text-anchor="middle"
+      font-size="11.5" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#c7d2fe" opacity="0.6">globally cached — shared across all users</text>
+</g>
+<g id="n_claudemd" data-node="claudemd" class="_a7" style="transform-origin:410px 224px">
+  <rect x="280" y="191" width="260" height="66" rx="14"
+    fill="rgba(99,102,241,0.15)" stroke="#6366f1" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="410" y="221.94" text-anchor="middle"
+      font-size="14" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#c7d2fe" letter-spacing="0.01em">② CLAUDE.md</text><text x="410" y="241.54" text-anchor="middle"
+      font-size="11.5" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#c7d2fe" opacity="0.6">cached within a project</text>
+</g>
+<g id="n_session" data-node="session" class="_a8" style="transform-origin:410px 430px">
+  <rect x="280" y="397" width="260" height="66" rx="14"
+    fill="rgba(245,158,11,0.18)" stroke="#f59e0b" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="410" y="427.94" text-anchor="middle"
+      font-size="14" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fde68a" letter-spacing="0.01em">③ Session Context</text><text x="410" y="447.54" text-anchor="middle"
+      font-size="11.5" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fde68a" opacity="0.6">cached within a session</text>
+</g>
+<g id="n_messages" data-node="messages" class="_a9" style="transform-origin:410px 576px">
+  <rect x="280" y="533" width="260" height="86" rx="14"
+    fill="rgba(245,158,11,0.18)" stroke="#f59e0b" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="410" y="564.14" text-anchor="middle"
+      font-size="14" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fde68a" letter-spacing="0.01em">④ Conversation</text><text x="410" y="583.74" text-anchor="middle"
+      font-size="14" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fde68a" letter-spacing="0.01em">Messages</text><text x="410" y="603.34" text-anchor="middle"
+      font-size="11.5" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fde68a" opacity="0.6">unique per turn — grows each request</text>
+</g>
+<g id="n_cache_prefix" data-node="cache_prefix" class="_a10" style="transform-origin:100px 224px">
+  <rect x="0" y="192.5" width="200" height="63" rx="31.5"
+    fill="rgba(16,185,129,0.18)" stroke="#10b981" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="100" y="222.09" text-anchor="middle"
+      font-size="13" font-weight="700" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#6ee7b7" letter-spacing="0.01em">CACHED PREFIX</text><text x="100" y="240.29" text-anchor="middle"
+      font-size="10.7" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#6ee7b7" opacity="0.6">reused every turn — 90% cheaper</text>
+</g>
+<g id="n_new_tokens" data-node="new_tokens" class="_a11" style="transform-origin:410px 755.5px">
+  <rect x="310" y="724" width="200" height="63" rx="31.5"
+    fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="410" y="753.59" text-anchor="middle"
+      font-size="13" font-weight="700" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" letter-spacing="0.01em">NEW TOKENS</text><text x="410" y="771.79" text-anchor="middle"
+      font-size="10.7" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" opacity="0.6">processed fresh each turn</text>
+</g>
+  </g>
+</svg>
