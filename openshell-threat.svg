@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 1118 821" width="1118" height="821">
+  <defs>
+    <radialGradient id="__bgGrad" cx="40%" cy="35%" r="75%" gradientUnits="userSpaceOnUse" gradientTransform="scale(1118,821)">
+    <stop offset="0%" stop-color="#03001a"/>
+    <stop offset="50%" stop-color="#050228"/>
+    <stop offset="100%" stop-color="#03001a"/>
+  </radialGradient>
+<filter id="__bg_blur"><feGaussianBlur stdDeviation="60"/></filter>
+
+<filter id="__shadow" x="-20%" y="-20%" width="140%" height="160%" color-interpolation-filters="sRGB">
+  <feDropShadow dx="0" dy="8" stdDeviation="12"
+    flood-color="#000" flood-opacity="0.2"/>
+  <feDropShadow dx="0" dy="3.2" stdDeviation="4.800000000000001"
+    flood-color="#000" flood-opacity="0.15"/>
+</filter>
+
+<filter id="__shadowSm" x="-20%" y="-20%" width="140%" height="160%" color-interpolation-filters="sRGB">
+  <feDropShadow dx="0" dy="4" stdDeviation="6"
+    flood-color="#000" flood-opacity="0.13999999999999999"/>
+  <feDropShadow dx="0" dy="1.6" stdDeviation="2.4000000000000004"
+    flood-color="#000" flood-opacity="0.105"/>
+</filter>
+
+<filter id="__glow" x="-60%" y="-60%" width="220%" height="220%" color-interpolation-filters="sRGB">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur1"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur2"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="16" result="blur3"/>
+  <feMerge>
+    <feMergeNode in="blur3"/>
+    <feMergeNode in="blur2"/>
+    <feMergeNode in="blur1"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+<filter id="__glowEdge" x="-60%" y="-60%" width="220%" height="220%" color-interpolation-filters="sRGB">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur1"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur2"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur3"/>
+  <feMerge>
+    <feMergeNode in="blur3"/>
+    <feMergeNode in="blur2"/>
+    <feMergeNode in="blur1"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+<filter id="__glowColor" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">
+  <feFlood flood-color="#00ffff" flood-opacity="0.9" result="flood"/>
+  <feComposite in="flood" in2="SourceAlpha" operator="in" result="colored"/>
+  <feGaussianBlur in="colored" stdDeviation="8" result="glow"/>
+  <feGaussianBlur in="colored" stdDeviation="20" result="glowWide"/>
+  <feMerge>
+    <feMergeNode in="glowWide"/>
+    <feMergeNode in="glow"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+<marker id="arr__fbbf24" viewBox="0 0 10 10" refX="1" refY="5"
+  markerWidth="4.8999999999999995" markerHeight="4.8999999999999995" orient="auto-start-reverse">
+  <path d="M 0 1.5 L 8.5 5 L 0 8.5 Z" fill="#fbbf24" opacity="1"/>
+</marker>
+
+<marker id="arr__ef4444" viewBox="0 0 10 10" refX="1" refY="5"
+  markerWidth="4.8999999999999995" markerHeight="4.8999999999999995" orient="auto-start-reverse">
+  <path d="M 0 1.5 L 8.5 5 L 0 8.5 Z" fill="#ef4444" opacity="1"/>
+</marker>
+    <style>* { box-sizing: border-box; }
+text { user-select: none; }
+
+@keyframes __fadeUp    { from { opacity:0; transform:translateY(16px) scale(.97) } to { opacity:1; transform:translateY(0) scale(1) } }
+@keyframes __fadeDown  { from { opacity:0; transform:translateY(-16px) scale(.97) } to { opacity:1; transform:translateY(0) scale(1) } }
+@keyframes __fadeLeft  { from { opacity:0; transform:translateX(16px) scale(.97) } to { opacity:1; transform:translateX(0) scale(1) } }
+@keyframes __fadeRight { from { opacity:0; transform:translateX(-16px) scale(.97) } to { opacity:1; transform:translateX(0) scale(1) } }
+@keyframes __zoomIn    { from { opacity:0; transform:scale(.6) } 70% { transform:scale(1.04) } to { opacity:1; transform:scale(1) } }
+@keyframes __pop       { from { opacity:0; transform:scale(.5) } 60% { transform:scale(1.12) } 80% { transform:scale(.96) } to { opacity:1; transform:scale(1) } }
+@keyframes __draw      { to   { stroke-dashoffset:0 } }
+@keyframes __pulse     { 0%,100% { transform:scale(1) } 50% { transform:scale(1.05) } }
+@keyframes __glowPulse { 0%,100% { filter:drop-shadow(0 0 4px currentColor) } 50% { filter:drop-shadow(0 0 14px currentColor) drop-shadow(0 0 28px currentColor) } }
+@keyframes __shimmer   { from { background-position:200% center } to { background-position:-200% center } }
+@keyframes __float     { 0%,100% { transform:translateY(0) } 50% { transform:translateY(-6px) } }
+@keyframes __spin      { from { transform:rotate(0deg) } to { transform:rotate(360deg) } }
+
+._a1{animation: __fadeUp 500ms cubic-bezier(0.34,1.56,0.64,1) 0ms 1 forwards;}
+@keyframes __sig_6 {
+  from { stroke-dashoffset:0 }
+  to   { stroke-dashoffset:-363.76888704488744 }
+}
+._sig_6 {
+  stroke-dasharray:30,364;
+  stroke-dashoffset:0;
+  animation:__sig_6 1200ms linear 450ms infinite;
+}
+@keyframes __sig_7 {
+  from { stroke-dashoffset:0 }
+  to   { stroke-dashoffset:-180 }
+}
+._sig_7 {
+  stroke-dasharray:30,180;
+  stroke-dashoffset:0;
+  animation:__sig_7 1200ms linear 525ms infinite;
+}
+@keyframes __sig_8 {
+  from { stroke-dashoffset:0 }
+  to   { stroke-dashoffset:-180 }
+}
+._sig_8 {
+  stroke-dasharray:30,180;
+  stroke-dashoffset:0;
+  animation:__sig_8 1200ms linear 600ms infinite;
+}
+@keyframes __sig_9 {
+  from { stroke-dashoffset:0 }
+  to   { stroke-dashoffset:-382.5779736918041 }
+}
+._sig_9 {
+  stroke-dasharray:30,383;
+  stroke-dashoffset:0;
+  animation:__sig_9 1200ms linear 675ms infinite;
+}
+._a6{animation: __zoomIn 600ms cubic-bezier(0.34,1.56,0.64,1) 750ms 1 forwards; opacity:0;}
+._a7{animation: __pop 600ms cubic-bezier(0.34,1.56,0.64,1) 825ms 1 forwards; opacity:0;}
+._a8{animation: __fadeLeft 600ms cubic-bezier(0.34,1.56,0.64,1) 900ms 1 forwards; opacity:0;}
+._a9{animation: __fadeUp 600ms cubic-bezier(0.34,1.56,0.64,1) 975ms 1 forwards; opacity:0;}
+._a10{animation: __fadeUp 600ms cubic-bezier(0.34,1.56,0.64,1) 1050ms 1 forwards; opacity:0;}
+._a11{animation: __fadeRight 600ms cubic-bezier(0.34,1.56,0.64,1) 1125ms 1 forwards; opacity:0;}
+._a12{animation: __pop 600ms cubic-bezier(0.34,1.56,0.64,1) 1200ms 1 forwards;}</style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1118" height="821" fill="url(#__bgGrad)"/>
+  
+  <circle cx="167.7" cy="164.2" r="287.3"
+    fill="#00ffff" opacity="0.12" filter="url(#__bg_blur)"/>
+  <circle cx="950.3" cy="615.8" r="246.3"
+    fill="#ff00ff" opacity="0.1" filter="url(#__bg_blur)"/>
+  <circle cx="559.0" cy="410.5" r="205.3"
+    fill="#00ff88" opacity="0.07" filter="url(#__bg_blur)"/>
+
+  
+  <text x="55" y="43"
+    font-size="20" font-weight="700" font-family="'Inter', system-ui, sans-serif"
+    fill="#f0f4ff" letter-spacing="-0.02em">The Unguarded Agent</text>
+  <text x="55" y="67"
+    font-size="13" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+    fill="#7c83bc">Four attack surfaces with zero oversight</text>
+  
+  <g opacity="0.7">
+    <g transform="translate(884.4,33.0) scale(0.0130)" fill="#7c83bc">
+      <path d="m654.53 592.55 276.12 394.95h-113.32l-225.32-322.28v-.02l-33.08-47.31-263.21-376.5h113.32l212.41 303.85z"/>
+<path d="m1094.42 0h-961.84c-73.22 0-132.58 59.36-132.58 132.58v961.84c0 73.22 59.36 132.58 132.58 132.58h961.84c73.22 0 132.58-59.36 132.58-132.58v-961.84c0-73.22-59.36-132.58-132.58-132.58zm-311.8 1040.52-228.01-331.84-285.47 331.84h-73.78l326.49-379.5-326.49-475.17h249.02l215.91 314.23 270.32-314.23h73.78l-311.33 361.9h-.02l338.6 492.77z"/>
+    </g>
+    <text x="906.4" y="45.0"
+      font-size="15" font-weight="600" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#7c83bc" text-anchor="start"
+      letter-spacing="0.01em">x.com/raultotocayo</text>
+  </g>
+
+  <!-- Diagram -->
+  <g transform="translate(55,107)">
+    
+<g id="g_grp_attacks" data-group="grp_attacks" class="_a1" style="transform-origin:484.0px 392.5px">
+  <rect x="0.0" y="312.0" width="968.0" height="161.0"
+    rx="18" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.3)" stroke-width="1.25" stroke-dasharray="8,5" opacity="1"/>
+  <text x="484.0" y="332.0"
+    font-size="13" font-weight="600" text-anchor="middle"
+    font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" fill="#fca5a5" letter-spacing="0.05em"
+    text-transform="uppercase">Attack Surfaces — unrestricted access</text>
+</g>
+    
+<g data-edge="user_input-agent">
+  <path id="ep_user_input_agent_1" d="M 499.25,66 C 499.25,72.67 499.25,94.04 499.25,106 C 499.25,117.96 499.25,132.44 499.25,137.73125"
+    fill="none" stroke="#fbbf24" stroke-width="2.25" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__fbbf24)" />
+  <rect x="437.0" y="82.6" width="124.5" height="22.9" rx="5" fill="rgba(6,7,15,0.85)" stroke="none"/>
+  <text x="499.3" y="94.0"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="11" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" fill="#fef08a">adversarial input</text>
+  <circle r="4" fill="#fbbf24" opacity="0.85">
+    <animateMotion dur="800ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_user_input_agent_1"/>
+    </animateMotion>
+  </circle>
+  <circle r="4" fill="#fbbf24" opacity="0.85">
+    <animateMotion dur="800ms" repeatCount="indefinite"
+      begin="400ms">
+      <mpath href="#ep_user_input_agent_1"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="agent-fs_attack">
+  <path id="ep_agent_fs_attack_2" d="M 610.75,215.96139839766934 C 649.38,225.30 803.88,255.99 842.5,272 C 881.13,288.01 842.50,299.89 842.5,312 C 842.50,324.11 842.50,339.21 842.5,344.65"
+    fill="none" stroke="#ef4444" stroke-width="2" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)" />
+  <rect x="799.7" y="262.5" width="85.6" height="35.0" rx="5" fill="rgba(6,7,15,0.85)" stroke="none"/>
+  <text x="842.5" y="273.3"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" fill="#fca5a5">Filesystem</text>
+  <text x="842.5" y="286.8"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" fill="#fca5a5">unrestricted</text>
+  <circle r="3" fill="#ef4444" opacity="0.85">
+    <animateMotion dur="700ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_agent_fs_attack_2"/>
+    </animateMotion>
+  </circle>
+  <circle r="3" fill="#ef4444" opacity="0.85">
+    <animateMotion dur="700ms" repeatCount="indefinite"
+      begin="350ms">
+      <mpath href="#ep_agent_fs_attack_2"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="agent-net_attack">
+  <path id="ep_agent_net_attack_3" d="M 559.2168674698795,232 C 568.51,238.67 605.70,258.67 615,272 C 624.30,285.33 615.00,299.89 615,312 C 615.00,324.11 615.00,339.21 615,344.65"
+    fill="none" stroke="#ef4444" stroke-width="2" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)" />
+  <rect x="572.2" y="262.5" width="85.6" height="35.0" rx="5" fill="rgba(6,7,15,0.85)" stroke="none"/>
+  <text x="615.0" y="273.3"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" fill="#fca5a5">Network</text>
+  <text x="615.0" y="286.8"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" fill="#fca5a5">unrestricted</text>
+  <circle r="3" fill="#ef4444" opacity="0.85">
+    <animateMotion dur="700ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_agent_net_attack_3"/>
+    </animateMotion>
+  </circle>
+  <circle r="3" fill="#ef4444" opacity="0.85">
+    <animateMotion dur="700ms" repeatCount="indefinite"
+      begin="350ms">
+      <mpath href="#ep_agent_net_attack_3"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="agent-proc_attack">
+  <path id="ep_agent_proc_attack_4" d="M 439.2831325301205,232 C 429.99,238.67 392.80,258.67 383.5,272 C 374.20,285.33 383.50,299.89 383.5,312 C 383.50,324.11 383.50,339.21 383.5,344.65"
+    fill="none" stroke="#ef4444" stroke-width="2" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)" />
+  <rect x="340.7" y="262.5" width="85.6" height="35.0" rx="5" fill="rgba(6,7,15,0.85)" stroke="none"/>
+  <text x="383.5" y="273.3"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" fill="#fca5a5">Process</text>
+  <text x="383.5" y="286.8"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" fill="#fca5a5">unrestricted</text>
+  <circle r="3" fill="#ef4444" opacity="0.85">
+    <animateMotion dur="700ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_agent_proc_attack_4"/>
+    </animateMotion>
+  </circle>
+  <circle r="3" fill="#ef4444" opacity="0.85">
+    <animateMotion dur="700ms" repeatCount="indefinite"
+      begin="350ms">
+      <mpath href="#ep_agent_proc_attack_4"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="agent-api_attack">
+  <path id="ep_agent_api_attack_5" d="M 387.75,214.5472739820566 C 345.96,224.12 178.79,255.76 137,272 C 95.21,288.24 137.00,299.89 137,312 C 137.00,324.11 137.00,339.21 137,344.65"
+    fill="none" stroke="#ef4444" stroke-width="2" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)" />
+  <rect x="94.2" y="262.5" width="85.6" height="35.0" rx="5" fill="rgba(6,7,15,0.85)" stroke="none"/>
+  <text x="137.0" y="273.3"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" fill="#fca5a5">Inference</text>
+  <text x="137.0" y="286.8"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" fill="#fca5a5">unrestricted</text>
+  <circle r="3" fill="#ef4444" opacity="0.85">
+    <animateMotion dur="700ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_agent_api_attack_5"/>
+    </animateMotion>
+  </circle>
+  <circle r="3" fill="#ef4444" opacity="0.85">
+    <animateMotion dur="700ms" repeatCount="indefinite"
+      begin="350ms">
+      <mpath href="#ep_agent_api_attack_5"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="fs_attack-outcome">
+  <path id="ep_fs_attack_outcome_6" d="M 842.5,433 C 842.50,439.67 842.50,459.67 842.5,473 C 842.50,486.33 883.87,497.54 842.5,513 C 801.13,528.46 635.65,556.99 594.2824502284194,565.7891657198118"
+    fill="none" stroke="#ef4444" stroke-width="1.4"
+    stroke-dasharray="5,6" filter="url(#__glowEdge)"
+    opacity="0.22" marker-end="url(#arr__ef4444)" />
+  <path d="M 842.5,433 C 842.50,439.67 842.50,459.67 842.5,473 C 842.50,486.33 883.87,497.54 842.5,513 C 801.13,528.46 635.65,556.99 594.2824502284194,565.7891657198118"
+    fill="none" stroke="#ef4444" stroke-width="2.2"
+    class="_sig_6" opacity="1"/>
+</g>
+<g data-edge="net_attack-outcome">
+  <path id="ep_net_attack_outcome_7" d="M 615,433 C 615.00,439.67 615.00,459.67 615,473 C 615.00,486.33 624.85,500.12 615,513 C 605.15,525.88 565.77,544.05 555.9271687291458,550.2554357042968"
+    fill="none" stroke="#ef4444" stroke-width="1.4"
+    stroke-dasharray="5,6" filter="url(#__glowEdge)"
+    opacity="0.22" marker-end="url(#arr__ef4444)" />
+  <path d="M 615,433 C 615.00,439.67 615.00,459.67 615,473 C 615.00,486.33 624.85,500.12 615,513 C 605.15,525.88 565.77,544.05 555.9271687291458,550.2554357042968"
+    fill="none" stroke="#ef4444" stroke-width="2.2"
+    class="_sig_7" opacity="1"/>
+</g>
+<g data-edge="proc_attack-outcome">
+  <path id="ep_proc_attack_outcome_8" d="M 383.5,433 C 383.50,439.67 383.50,459.67 383.5,473 C 383.50,486.33 373.65,500.12 383.5,513 C 393.35,525.88 432.73,544.05 442.57283127085424,550.2554357042968"
+    fill="none" stroke="#ef4444" stroke-width="1.4"
+    stroke-dasharray="5,6" filter="url(#__glowEdge)"
+    opacity="0.22" marker-end="url(#arr__ef4444)" />
+  <path d="M 383.5,433 C 383.50,439.67 383.50,459.67 383.5,473 C 383.50,486.33 373.65,500.12 383.5,513 C 393.35,525.88 432.73,544.05 442.57283127085424,550.2554357042968"
+    fill="none" stroke="#ef4444" stroke-width="2.2"
+    class="_sig_8" opacity="1"/>
+</g>
+<g data-edge="api_attack-outcome">
+  <path id="ep_api_attack_outcome_9" d="M 137,433 C 137.00,439.67 137.00,459.67 137,473 C 137.00,486.33 92.47,497.36 137,513 C 181.53,528.64 359.67,557.87 404.20639042251355,566.8469744674768"
+    fill="none" stroke="#ef4444" stroke-width="1.4"
+    stroke-dasharray="5,6" filter="url(#__glowEdge)"
+    opacity="0.22" marker-end="url(#arr__ef4444)" />
+  <path d="M 137,433 C 137.00,439.67 137.00,459.67 137,473 C 137.00,486.33 92.47,497.36 137,513 C 181.53,528.64 359.67,557.87 404.20639042251355,566.8469744674768"
+    fill="none" stroke="#ef4444" stroke-width="2.2"
+    class="_sig_9" opacity="1"/>
+</g>
+    
+<g id="n_user_input" data-node="user_input" class="_a6" style="transform-origin:499.25px 33px">
+  <polygon points="405.25,0 629.25,0 593.25,66 369.25,66" fill="rgba(251,191,36,0.18)" stroke="#fbbf24" stroke-width="1.5" filter="url(#__glow)" opacity="1"/>
+  <text x="499.25" y="29.72" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fef08a" letter-spacing="0.01em">User Input</text><text x="499.25" y="47.92" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fef08a" letter-spacing="0.01em">or Prompt Injection</text>
+</g>
+<g id="n_agent" data-node="agent" class="_a7" style="transform-origin:499.25px 189px">
+  <polygon points="387.75,189 415.625,146 582.875,146 610.75,189 582.875,232 415.625,232" fill="rgba(168,85,247,0.18)" stroke="#a855f7" stroke-width="1.5" filter="url(#__glow)" opacity="1"/>
+  <text x="499.25" y="177.14" text-anchor="middle"
+      font-size="14" font-weight="600" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#e9d5ff" letter-spacing="0.01em">AI Agent</text><text x="499.25" y="196.74" text-anchor="middle"
+      font-size="14" font-weight="600" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#e9d5ff" letter-spacing="0.01em">full system access</text><text x="499.25" y="216.34" text-anchor="middle"
+      font-size="11.5" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#e9d5ff" opacity="0.6">Claude Code · OpenClaw · Copilot</text>
+</g>
+<g id="n_fs_attack" data-node="fs_attack" class="_a8" style="transform-origin:842.5px 392.5px">
+  <rect x="754.5" y="352" width="176" height="81" rx="10"
+    fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__glow)" opacity="1"/>
+  <text x="842.5" y="381.08" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Read .env files</text><text x="842.5" y="397.88" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Delete codebase</text><text x="842.5" y="414.68" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Exfiltrate secrets</text>
+</g>
+<g id="n_net_attack" data-node="net_attack" class="_a9" style="transform-origin:615px 392.5px">
+  <rect x="530.5" y="352" width="169" height="81" rx="10"
+    fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__glow)" opacity="1"/>
+  <text x="615" y="381.08" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Call any URL</text><text x="615" y="397.88" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">C2 callback</text><text x="615" y="414.68" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Data exfiltration</text>
+</g>
+<g id="n_proc_attack" data-node="proc_attack" class="_a10" style="transform-origin:383.5px 392.5px">
+  <rect x="291.5" y="352" width="184" height="81" rx="10"
+    fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__glow)" opacity="1"/>
+  <text x="383.5" y="381.08" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Spawn shells</text><text x="383.5" y="397.88" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Escalate privileges</text><text x="383.5" y="414.68" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Install malware</text>
+</g>
+<g id="n_api_attack" data-node="api_attack" class="_a11" style="transform-origin:137px 392.5px">
+  <rect x="37.5" y="352" width="199" height="81" rx="10"
+    fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__glow)" opacity="1"/>
+  <text x="137" y="381.08" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Reroute inference</text><text x="137" y="397.88" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Hit unguarded models</text><text x="137" y="414.68" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Bypass safety filters</text>
+</g>
+<g id="n_outcome" data-node="outcome" class="_a12" style="transform-origin:499.25px 586px">
+  <rect x="409.25" y="553" width="180" height="66" rx="33"
+    fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__glow)" opacity="1"/>
+  <text x="499.25" y="582.72" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Data Breach</text><text x="499.25" y="600.92" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">System Compromise</text>
+</g>
+  </g>
+</svg>
