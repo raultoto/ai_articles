@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 871 1243" width="871" height="1243">
+  <defs>
+    <radialGradient id="__bgGrad" cx="40%" cy="35%" r="75%" gradientUnits="userSpaceOnUse" gradientTransform="scale(871,1243)">
+    <stop offset="0%" stop-color="#03001a"/>
+    <stop offset="50%" stop-color="#050228"/>
+    <stop offset="100%" stop-color="#03001a"/>
+  </radialGradient>
+<filter id="__bg_blur"><feGaussianBlur stdDeviation="60"/></filter>
+
+<filter id="__shadow" x="-20%" y="-20%" width="140%" height="160%" color-interpolation-filters="sRGB">
+  <feDropShadow dx="0" dy="8" stdDeviation="12"
+    flood-color="#000" flood-opacity="0.2"/>
+  <feDropShadow dx="0" dy="3.2" stdDeviation="4.800000000000001"
+    flood-color="#000" flood-opacity="0.15"/>
+</filter>
+
+<filter id="__shadowSm" x="-20%" y="-20%" width="140%" height="160%" color-interpolation-filters="sRGB">
+  <feDropShadow dx="0" dy="4" stdDeviation="6"
+    flood-color="#000" flood-opacity="0.13999999999999999"/>
+  <feDropShadow dx="0" dy="1.6" stdDeviation="2.4000000000000004"
+    flood-color="#000" flood-opacity="0.105"/>
+</filter>
+
+<filter id="__glow" x="-60%" y="-60%" width="220%" height="220%" color-interpolation-filters="sRGB">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur1"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur2"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="16" result="blur3"/>
+  <feMerge>
+    <feMergeNode in="blur3"/>
+    <feMergeNode in="blur2"/>
+    <feMergeNode in="blur1"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+<filter id="__glowEdge" x="-60%" y="-60%" width="220%" height="220%" color-interpolation-filters="sRGB">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur1"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur2"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur3"/>
+  <feMerge>
+    <feMergeNode in="blur3"/>
+    <feMergeNode in="blur2"/>
+    <feMergeNode in="blur1"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+<filter id="__glowColor" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">
+  <feFlood flood-color="#00ffff" flood-opacity="0.9" result="flood"/>
+  <feComposite in="flood" in2="SourceAlpha" operator="in" result="colored"/>
+  <feGaussianBlur in="colored" stdDeviation="8" result="glow"/>
+  <feGaussianBlur in="colored" stdDeviation="20" result="glowWide"/>
+  <feMerge>
+    <feMergeNode in="glowWide"/>
+    <feMergeNode in="glow"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+<marker id="arr__fbbf24" viewBox="0 0 10 10" refX="1" refY="5"
+  markerWidth="4.8999999999999995" markerHeight="4.8999999999999995" orient="auto-start-reverse">
+  <path d="M 0 1.5 L 8.5 5 L 0 8.5 Z" fill="#fbbf24" opacity="1"/>
+</marker>
+
+<marker id="arr__ef4444" viewBox="0 0 10 10" refX="1" refY="5"
+  markerWidth="4.8999999999999995" markerHeight="4.8999999999999995" orient="auto-start-reverse">
+  <path d="M 0 1.5 L 8.5 5 L 0 8.5 Z" fill="#ef4444" opacity="1"/>
+</marker>
+
+<marker id="arr__f59e0b" viewBox="0 0 10 10" refX="1" refY="5"
+  markerWidth="4.8999999999999995" markerHeight="4.8999999999999995" orient="auto-start-reverse">
+  <path d="M 0 1.5 L 8.5 5 L 0 8.5 Z" fill="#f59e0b" opacity="1"/>
+</marker>
+    <style>* { box-sizing: border-box; }
+text { user-select: none; }
+
+@keyframes __fadeUp    { from { opacity:0; transform:translateY(16px) scale(.97) } to { opacity:1; transform:translateY(0) scale(1) } }
+@keyframes __fadeDown  { from { opacity:0; transform:translateY(-16px) scale(.97) } to { opacity:1; transform:translateY(0) scale(1) } }
+@keyframes __fadeLeft  { from { opacity:0; transform:translateX(16px) scale(.97) } to { opacity:1; transform:translateX(0) scale(1) } }
+@keyframes __fadeRight { from { opacity:0; transform:translateX(-16px) scale(.97) } to { opacity:1; transform:translateX(0) scale(1) } }
+@keyframes __zoomIn    { from { opacity:0; transform:scale(.6) } 70% { transform:scale(1.04) } to { opacity:1; transform:scale(1) } }
+@keyframes __pop       { from { opacity:0; transform:scale(.5) } 60% { transform:scale(1.12) } 80% { transform:scale(.96) } to { opacity:1; transform:scale(1) } }
+@keyframes __draw      { to   { stroke-dashoffset:0 } }
+@keyframes __pulse     { 0%,100% { transform:scale(1) } 50% { transform:scale(1.05) } }
+@keyframes __glowPulse { 0%,100% { filter:drop-shadow(0 0 4px currentColor) } 50% { filter:drop-shadow(0 0 14px currentColor) drop-shadow(0 0 28px currentColor) } }
+@keyframes __shimmer   { from { background-position:200% center } to { background-position:-200% center } }
+@keyframes __float     { 0%,100% { transform:translateY(0) } 50% { transform:translateY(-6px) } }
+@keyframes __spin      { from { transform:rotate(0deg) } to { transform:rotate(360deg) } }
+
+._a1{animation: __fadeUp 500ms cubic-bezier(0.34,1.56,0.64,1) 0ms 1 forwards;}
+._a2{animation: __fadeUp 500ms cubic-bezier(0.34,1.56,0.64,1) 80ms 1 forwards; opacity:0;}
+@keyframes __sig_7 {
+  from { stroke-dashoffset:0 }
+  to   { stroke-dashoffset:-231.56753361154918 }
+}
+._sig_7 {
+  stroke-dasharray:30,232;
+  stroke-dashoffset:0;
+  animation:__sig_7 1200ms linear 560ms infinite;
+}
+@keyframes __sig_8 {
+  from { stroke-dashoffset:0 }
+  to   { stroke-dashoffset:-180 }
+}
+._sig_8 {
+  stroke-dasharray:30,180;
+  stroke-dashoffset:0;
+  animation:__sig_8 1200ms linear 640ms infinite;
+}
+@keyframes __sig_9 {
+  from { stroke-dashoffset:0 }
+  to   { stroke-dashoffset:-239.03759485868952 }
+}
+._sig_9 {
+  stroke-dasharray:30,240;
+  stroke-dashoffset:0;
+  animation:__sig_9 1200ms linear 720ms infinite;
+}
+@keyframes __march_6 { from { stroke-dashoffset:0 } to { stroke-dashoffset:-11 } }
+._a6 { stroke-dasharray:6,5; animation:__march_6 500ms linear 800ms infinite; }
+@keyframes __march_7 { from { stroke-dashoffset:0 } to { stroke-dashoffset:-11 } }
+._a7 { stroke-dasharray:6,5; animation:__march_7 500ms linear 880ms infinite; }
+@keyframes __march_8 { from { stroke-dashoffset:0 } to { stroke-dashoffset:-11 } }
+._a8 { stroke-dasharray:6,5; animation:__march_8 500ms linear 960ms infinite; }
+._a9{animation: __zoomIn 600ms cubic-bezier(0.34,1.56,0.64,1) 1040ms 1 forwards; opacity:0;}
+._a10{animation: __pop 600ms cubic-bezier(0.34,1.56,0.64,1) 1120ms 1 forwards; opacity:0;}
+._a11{animation: __pulse 600ms cubic-bezier(0.34,1.56,0.64,1) 1200ms 1 forwards;}
+._a12{animation: __pulse 600ms cubic-bezier(0.34,1.56,0.64,1) 1280ms 1 forwards;}
+._a13{animation: __glowPulse 600ms cubic-bezier(0.34,1.56,0.64,1) 1360ms 1 forwards;}
+._a14{animation: __fadeLeft 600ms cubic-bezier(0.34,1.56,0.64,1) 1440ms 1 forwards; opacity:0;}
+._a15{animation: __fadeUp 600ms cubic-bezier(0.34,1.56,0.64,1) 1520ms 1 forwards; opacity:0;}
+._a16{animation: __fadeRight 600ms cubic-bezier(0.34,1.56,0.64,1) 1600ms 1 forwards; opacity:0;}
+._a17{animation: __pop 600ms cubic-bezier(0.34,1.56,0.64,1) 1680ms 1 forwards;}</style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="871" height="1243" fill="url(#__bgGrad)"/>
+  
+  <circle cx="130.7" cy="248.6" r="304.8"
+    fill="#00ffff" opacity="0.12" filter="url(#__bg_blur)"/>
+  <circle cx="740.4" cy="932.3" r="261.3"
+    fill="#ff00ff" opacity="0.1" filter="url(#__bg_blur)"/>
+  <circle cx="435.5" cy="621.5" r="217.8"
+    fill="#00ff88" opacity="0.07" filter="url(#__bg_blur)"/>
+
+  
+  <text x="55" y="43"
+    font-size="20" font-weight="700" font-family="'Inter', system-ui, sans-serif"
+    fill="#f0f4ff" letter-spacing="-0.02em">The Trivy Supply Chain Attack</text>
+  <text x="55" y="67"
+    font-size="13" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+    fill="#7c83bc">From misconfiguration to mass credential theft in four stages</text>
+  
+  <g opacity="0.7">
+    <g transform="translate(637.4,33.0) scale(0.0130)" fill="#7c83bc">
+      <path d="m654.53 592.55 276.12 394.95h-113.32l-225.32-322.28v-.02l-33.08-47.31-263.21-376.5h113.32l212.41 303.85z"/>
+<path d="m1094.42 0h-961.84c-73.22 0-132.58 59.36-132.58 132.58v961.84c0 73.22 59.36 132.58 132.58 132.58h961.84c73.22 0 132.58-59.36 132.58-132.58v-961.84c0-73.22-59.36-132.58-132.58-132.58zm-311.8 1040.52-228.01-331.84-285.47 331.84h-73.78l326.49-379.5-326.49-475.17h249.02l215.91 314.23 270.32-314.23h73.78l-311.33 361.9h-.02l338.6 492.77z"/>
+    </g>
+    <text x="659.4" y="45.0"
+      font-size="15" font-weight="600" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#7c83bc" text-anchor="start"
+      letter-spacing="0.01em">x.com/raultotocayo</text>
+  </g>
+
+  <!-- Diagram -->
+  <g transform="translate(55,107)">
+    
+<g id="g_grp_poison" data-group="grp_poison" class="_a1" style="transform-origin:365.8px 435.5px">
+  <rect x="120.8" y="357.0" width="490.0" height="157.0"
+    rx="18" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.28)" stroke-width="1.25" stroke-dasharray="8,5" opacity="1"/>
+  <text x="365.8" y="377.0"
+    font-size="13" font-weight="600" text-anchor="middle"
+    font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" fill="#fca5a5" letter-spacing="0.05em"
+    text-transform="uppercase">Stage 2 — Release Poisoning</text>
+</g>
+<g id="g_grp_harvest" data-group="grp_harvest" class="_a2" style="transform-origin:360.5px 815.0px">
+  <rect x="0.0" y="746.0" width="721.0" height="138.0"
+    rx="18" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.25)" stroke-width="1.25" stroke-dasharray="8,5" opacity="1"/>
+  <text x="360.5" y="766.0"
+    font-size="13" font-weight="600" text-anchor="middle"
+    font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" fill="#fca5a5" letter-spacing="0.05em"
+    text-transform="uppercase">Stage 3 — Silent Credential Harvest</text>
+</g>
+    
+<g data-edge="gh_misconfig-stolen_pat">
+  <path id="ep_gh_misconfig_stolen_pat_2" d="M 368,82 C 368.00,88.25 368.00,108.38 368,119.5 C 368.00,130.62 368.00,143.86 368,148.73125"
+    fill="none" stroke="#fbbf24" stroke-width="2.25" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__fbbf24)" />
+  <rect x="318.5" y="96.1" width="98.9" height="22.9" rx="5" fill="rgba(6,7,15,0.85)" stroke="none"/>
+  <text x="368.0" y="107.5"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="11" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" fill="#fef08a">extract token</text>
+  <circle r="4" fill="#fbbf24" opacity="0.85">
+    <animateMotion dur="800ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_gh_misconfig_stolen_pat_2"/>
+    </animateMotion>
+  </circle>
+  <circle r="4" fill="#fbbf24" opacity="0.85">
+    <animateMotion dur="800ms" repeatCount="indefinite"
+      begin="400ms">
+      <mpath href="#ep_gh_misconfig_stolen_pat_2"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="stolen_pat-release_poison">
+  <path id="ep_stolen_pat_release_poison_3" d="M 436.90625,282 C 443.80,288.25 471.36,307.00 478.25,319.5 C 485.14,332.00 478.25,345.73 478.25,357 C 478.25,368.27 478.25,382.13 478.25,387.15"
+    fill="none" stroke="#ef4444" stroke-width="2" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)" />
+  <rect x="422.4" y="314.8" width="111.7" height="22.9" rx="5" fill="rgba(6,7,15,0.85)" stroke="none"/>
+  <text x="478.3" y="326.3"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="11" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" fill="#fca5a5">publish v0.69.4</text>
+  <circle r="3" fill="#ef4444" opacity="0.85">
+    <animateMotion dur="750ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_stolen_pat_release_poison_3"/>
+    </animateMotion>
+  </circle>
+  <circle r="3" fill="#ef4444" opacity="0.85">
+    <animateMotion dur="750ms" repeatCount="indefinite"
+      begin="375ms">
+      <mpath href="#ep_stolen_pat_release_poison_3"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="stolen_pat-tag_hijack">
+  <path id="ep_stolen_pat_tag_hijack_4" d="M 290.03125,282 C 282.23,288.25 251.05,307.00 243.25,319.5 C 235.45,332.00 243.25,345.73 243.25,357 C 243.25,368.27 243.25,382.13 243.25,387.15"
+    fill="none" stroke="#ef4444" stroke-width="2" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)" />
+  <rect x="187.4" y="314.8" width="111.7" height="22.9" rx="5" fill="rgba(6,7,15,0.85)" stroke="none"/>
+  <text x="243.3" y="326.3"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="11" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" fill="#fca5a5">force-push tags</text>
+  <circle r="3" fill="#ef4444" opacity="0.85">
+    <animateMotion dur="750ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_stolen_pat_tag_hijack_4"/>
+    </animateMotion>
+  </circle>
+  <circle r="3" fill="#ef4444" opacity="0.85">
+    <animateMotion dur="750ms" repeatCount="indefinite"
+      begin="375ms">
+      <mpath href="#ep_stolen_pat_tag_hijack_4"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="release_poison-cicd_runs">
+  <path id="ep_release_poison_cicd_runs_5" d="M 478.25,476.5 C 478.25,482.75 478.25,501.50 478.25,514 C 478.25,526.50 486.03,539.71 478.25,551.5 C 470.47,563.29 439.35,579.20 431.5701582500428,584.7368941258198"
+    fill="none" stroke="#f59e0b" stroke-width="2" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__f59e0b)" />
+  <rect x="423.9" y="503.3" width="108.8" height="35.0" rx="5" fill="rgba(6,7,15,0.85)" stroke="none"/>
+  <text x="478.3" y="514.0"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" fill="#fde68a">pipelines pull</text>
+  <text x="478.3" y="527.5"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" fill="#fde68a">poisoned release</text>
+  <circle r="3" fill="#f59e0b" opacity="0.85">
+    <animateMotion dur="800ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_release_poison_cicd_runs_5"/>
+    </animateMotion>
+  </circle>
+  <circle r="3" fill="#f59e0b" opacity="0.85">
+    <animateMotion dur="800ms" repeatCount="indefinite"
+      begin="400ms">
+      <mpath href="#ep_release_poison_cicd_runs_5"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="tag_hijack-cicd_runs">
+  <path id="ep_tag_hijack_cicd_runs_6" d="M 243.25,476.5 C 243.25,482.75 243.25,501.50 243.25,514 C 243.25,526.50 234.35,539.65 243.25,551.5 C 252.15,563.35 287.73,579.49 296.6230969621556,585.0854758439216"
+    fill="none" stroke="#f59e0b" stroke-width="2" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__f59e0b)" />
+  <rect x="180.2" y="503.3" width="126.2" height="35.0" rx="5" fill="rgba(6,7,15,0.85)" stroke="none"/>
+  <text x="243.3" y="514.0"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" fill="#fde68a">workflows resolve</text>
+  <text x="243.3" y="527.5"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" fill="#fde68a">to malicious commit</text>
+  <circle r="3" fill="#f59e0b" opacity="0.85">
+    <animateMotion dur="800ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_tag_hijack_cicd_runs_6"/>
+    </animateMotion>
+  </circle>
+  <circle r="3" fill="#f59e0b" opacity="0.85">
+    <animateMotion dur="800ms" repeatCount="indefinite"
+      begin="400ms">
+      <mpath href="#ep_tag_hijack_cicd_runs_6"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="cicd_runs-mem_dump">
+  <path id="ep_cicd_runs_mem_dump_7" d="M 473,665.8369565217391 C 493.83,672.95 577.17,695.14 598,708.5 C 618.83,721.86 598.00,734.42 598,746 C 598.00,757.58 598.00,772.66 598,777.9875"
+    fill="none" stroke="#ef4444" stroke-width="1.5"
+    stroke-dasharray="5,6" filter="url(#__glowEdge)"
+    opacity="0.22" marker-end="url(#arr__ef4444)" />
+  <path d="M 473,665.8369565217391 C 493.83,672.95 577.17,695.14 598,708.5 C 618.83,721.86 598.00,734.42 598,746 C 598.00,757.58 598.00,772.66 598,777.9875"
+    fill="none" stroke="#ef4444" stroke-width="2.3"
+    class="_sig_7" opacity="1"/>
+</g>
+<g data-edge="cicd_runs-sweep_fs">
+  <path id="ep_cicd_runs_sweep_fs_8" d="M 368,671 C 368.00,677.25 368.00,696.00 368,708.5 C 368.00,721.00 368.00,734.42 368,746 C 368.00,757.58 368.00,772.66 368,777.9875"
+    fill="none" stroke="#ef4444" stroke-width="1.5"
+    stroke-dasharray="5,6" filter="url(#__glowEdge)"
+    opacity="0.22" marker-end="url(#arr__ef4444)" />
+  <path d="M 368,671 C 368.00,677.25 368.00,696.00 368,708.5 C 368.00,721.00 368.00,734.42 368,746 C 368.00,757.58 368.00,772.66 368,777.9875"
+    fill="none" stroke="#ef4444" stroke-width="2.3"
+    class="_sig_8" opacity="1"/>
+</g>
+<g data-edge="cicd_runs-encrypt_exfil">
+  <path id="ep_cicd_runs_encrypt_exfil_9" d="M 263,664.7052631578947 C 240.92,672.00 152.58,694.95 130.5,708.5 C 108.42,722.05 130.50,734.42 130.5,746 C 130.50,757.58 130.50,772.66 130.5,777.9875"
+    fill="none" stroke="#ef4444" stroke-width="1.5"
+    stroke-dasharray="5,6" filter="url(#__glowEdge)"
+    opacity="0.22" marker-end="url(#arr__ef4444)" />
+  <path d="M 263,664.7052631578947 C 240.92,672.00 152.58,694.95 130.5,708.5 C 108.42,722.05 130.50,734.42 130.5,746 C 130.50,757.58 130.50,772.66 130.5,777.9875"
+    fill="none" stroke="#ef4444" stroke-width="2.3"
+    class="_sig_9" opacity="1"/>
+</g>
+<g data-edge="mem_dump-npm_tokens">
+  <path id="ep_mem_dump_npm_tokens_10" d="M 598,846.5 C 598.00,852.75 598.00,871.50 598,884 C 598.00,896.50 621.31,907.45 598,921.5 C 574.69,935.55 481.44,960.48 458.1294144095881,968.2724854902975"
+    fill="none" stroke="#ef4444" stroke-width="1.4" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)"  class="_a6"/>
+</g>
+<g data-edge="sweep_fs-npm_tokens">
+  <path id="ep_sweep_fs_npm_tokens_11" d="M 368,846.5 C 368.00,852.75 368.00,871.50 368,884 C 368.00,896.50 368.33,909.86 368,921.5 C 367.67,933.14 366.37,948.47 366.0416449986038,953.8643931809689"
+    fill="none" stroke="#ef4444" stroke-width="1.4" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)"  class="_a7"/>
+</g>
+<g data-edge="encrypt_exfil-npm_tokens">
+  <path id="ep_encrypt_exfil_npm_tokens_12" d="M 130.5,846.5 C 130.50,852.75 130.50,871.50 130.5,884 C 130.50,896.50 107.52,907.50 130.5,921.5 C 153.48,935.50 245.40,960.25 268.37481517517267,968.0012803061269"
+    fill="none" stroke="#ef4444" stroke-width="1.4" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)"  class="_a8"/>
+</g>
+    
+<g id="n_gh_misconfig" data-node="gh_misconfig" class="_a9" style="transform-origin:368px 41px">
+  <polygon points="286.5,0 485.5,0 449.5,82 250.5,82" fill="rgba(251,191,36,0.18)" stroke="#fbbf24" stroke-width="1.5" filter="url(#__glow)" opacity="1"/>
+  <text x="368" y="29.99" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fef08a" letter-spacing="0.01em">GitHub Actions</text><text x="368" y="48.19" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fef08a" letter-spacing="0.01em">Misconfiguration</text><text x="368" y="66.39" text-anchor="middle"
+      font-size="10.7" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fef08a" opacity="0.6">Late February 2026</text>
+</g>
+<g id="n_stolen_pat" data-node="stolen_pat" class="_a10" style="transform-origin:368px 219.5px">
+  <polygon points="368,157 503,219.5 368,282 233,219.5" fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__glow)" opacity="1"/>
+  <text x="368" y="209.34" text-anchor="middle"
+      font-size="12" font-weight="600" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Privileged Access</text><text x="368" y="226.14" text-anchor="middle"
+      font-size="12" font-weight="600" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Token Stolen</text><text x="368" y="242.94" text-anchor="middle"
+      font-size="9.8" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" opacity="0.6">PAT extracted from runner</text>
+</g>
+<g id="n_release_poison" data-node="release_poison" class="_a11" style="transform-origin:478.25px 435.5px">
+  <polygon points="380.75,435.5 405.125,394.5 551.375,394.5 575.75,435.5 551.375,476.5 405.125,476.5" fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__glow)" opacity="1"/>
+  <text x="478.25" y="424.49" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Trivy v0.69.4</text><text x="478.25" y="442.69" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Release Poisoned</text><text x="478.25" y="460.89" text-anchor="middle"
+      font-size="10.7" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" opacity="0.6">malicious binary published</text>
+</g>
+<g id="n_tag_hijack" data-node="tag_hijack" class="_a12" style="transform-origin:243.25px 435.5px">
+  <polygon points="155.75,435.5 177.625,394.5 308.875,394.5 330.75,435.5 308.875,476.5 177.625,476.5" fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__glow)" opacity="1"/>
+  <text x="243.25" y="424.49" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Force-Push</text><text x="243.25" y="442.69" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">76 of 77 Tags</text><text x="243.25" y="460.89" text-anchor="middle"
+      font-size="10.7" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" opacity="0.6">trivy-action rewritten</text>
+</g>
+<g id="n_cicd_runs" data-node="cicd_runs" class="_a13" style="transform-origin:368px 630px">
+  <rect x="263" y="589" width="210" height="82" rx="10"
+    fill="rgba(245,158,11,0.2)" stroke="#f59e0b" stroke-width="1.5" filter="url(#__glow)" opacity="1"/>
+  <text x="368" y="618.99" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fde68a" letter-spacing="0.01em">CI/CD Pipelines</text><text x="368" y="637.19" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fde68a" letter-spacing="0.01em">Run Malware Silently</text><text x="368" y="655.39" text-anchor="middle"
+      font-size="10.7" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fde68a" opacity="0.6">scans complete — pipeline green</text>
+</g>
+<g id="n_mem_dump" data-node="mem_dump" class="_a14" style="transform-origin:598px 815px">
+  <rect x="510" y="783.5" width="176" height="63" rx="10"
+    fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__glow)" opacity="1"/>
+  <text x="598" y="811.98" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Dump Process</text><text x="598" y="828.78" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Memory /proc/*/mem</text>
+</g>
+<g id="n_sweep_fs" data-node="sweep_fs" class="_a15" style="transform-origin:368px 815px">
+  <rect x="276" y="783.5" width="184" height="63" rx="10"
+    fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__glow)" opacity="1"/>
+  <text x="368" y="811.98" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Sweep 50+ Paths</text><text x="368" y="828.78" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">SSH, AWS, K8s, .env</text>
+</g>
+<g id="n_encrypt_exfil" data-node="encrypt_exfil" class="_a16" style="transform-origin:130.5px 815px">
+  <rect x="35" y="783.5" width="191" height="63" rx="10"
+    fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__glow)" opacity="1"/>
+  <text x="130.5" y="811.98" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">AES-256 + RSA-4096</text><text x="130.5" y="828.78" text-anchor="middle"
+      font-size="12" font-weight="500" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Encrypt &amp; Exfiltrate</text>
+</g>
+<g id="n_npm_tokens" data-node="npm_tokens" class="_a17" style="transform-origin:363.25px 1000px">
+  <rect x="273.25" y="959" width="180" height="82" rx="41"
+    fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__glow)" opacity="1"/>
+  <text x="363.25" y="988.99" text-anchor="middle"
+      font-size="13" font-weight="700" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">npm Tokens</text><text x="363.25" y="1007.19" text-anchor="middle"
+      font-size="13" font-weight="700" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" letter-spacing="0.01em">Harvested</text><text x="363.25" y="1025.39" text-anchor="middle"
+      font-size="10.7" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace"
+      fill="#fca5a5" opacity="0.6">launch pad for CanisterWorm</text>
+</g>
+  </g>
+</svg>
