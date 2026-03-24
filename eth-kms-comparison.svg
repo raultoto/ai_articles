@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 1231 835" width="1231" height="835">
+  <defs>
+    <radialGradient id="__bgGrad" cx="40%" cy="35%" r="75%" gradientUnits="userSpaceOnUse" gradientTransform="scale(1231,835)">
+    <stop offset="0%" stop-color="#06070f"/>
+    <stop offset="50%" stop-color="#0d0f1e"/>
+    <stop offset="100%" stop-color="#06070f"/>
+  </radialGradient>
+<filter id="__bg_blur"><feGaussianBlur stdDeviation="60"/></filter>
+
+<filter id="__shadow" x="-20%" y="-20%" width="140%" height="160%" color-interpolation-filters="sRGB">
+  <feDropShadow dx="0" dy="8" stdDeviation="12"
+    flood-color="#000" flood-opacity="0.2"/>
+  <feDropShadow dx="0" dy="3.2" stdDeviation="4.800000000000001"
+    flood-color="#000" flood-opacity="0.15"/>
+</filter>
+
+<filter id="__shadowSm" x="-20%" y="-20%" width="140%" height="160%" color-interpolation-filters="sRGB">
+  <feDropShadow dx="0" dy="4" stdDeviation="6"
+    flood-color="#000" flood-opacity="0.13999999999999999"/>
+  <feDropShadow dx="0" dy="1.6" stdDeviation="2.4000000000000004"
+    flood-color="#000" flood-opacity="0.105"/>
+</filter>
+
+<filter id="__glass" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+  <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise"/>
+  <feColorMatrix in="noise" type="saturate" values="0" result="grayNoise"/>
+  <feBlend in="SourceGraphic" in2="grayNoise" mode="overlay" result="blended"/>
+  <feComposite in="blended" in2="SourceGraphic" operator="atop"/>
+</filter>
+
+<filter id="__glow" x="-60%" y="-60%" width="220%" height="220%" color-interpolation-filters="sRGB">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur1"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur2"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur3"/>
+  <feMerge>
+    <feMergeNode in="blur3"/>
+    <feMergeNode in="blur2"/>
+    <feMergeNode in="blur1"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+<filter id="__glowEdge" x="-60%" y="-60%" width="220%" height="220%" color-interpolation-filters="sRGB">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" result="blur1"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur2"/>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur3"/>
+  <feMerge>
+    <feMergeNode in="blur3"/>
+    <feMergeNode in="blur2"/>
+    <feMergeNode in="blur1"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+<marker id="arr__ef4444" viewBox="0 0 10 10" refX="1" refY="5"
+  markerWidth="4.8999999999999995" markerHeight="4.8999999999999995" orient="auto-start-reverse">
+  <path d="M 0 1.5 L 8.5 5 L 0 8.5 Z" fill="#ef4444" opacity="1"/>
+</marker>
+
+<marker id="arr__f59e0b" viewBox="0 0 10 10" refX="1" refY="5"
+  markerWidth="4.8999999999999995" markerHeight="4.8999999999999995" orient="auto-start-reverse">
+  <path d="M 0 1.5 L 8.5 5 L 0 8.5 Z" fill="#f59e0b" opacity="1"/>
+</marker>
+
+<marker id="arr__10b981" viewBox="0 0 10 10" refX="1" refY="5"
+  markerWidth="4.8999999999999995" markerHeight="4.8999999999999995" orient="auto-start-reverse">
+  <path d="M 0 1.5 L 8.5 5 L 0 8.5 Z" fill="#10b981" opacity="1"/>
+</marker>
+
+<marker id="arr__6366f1" viewBox="0 0 10 10" refX="1" refY="5"
+  markerWidth="4.8999999999999995" markerHeight="4.8999999999999995" orient="auto-start-reverse">
+  <path d="M 0 1.5 L 8.5 5 L 0 8.5 Z" fill="#6366f1" opacity="1"/>
+</marker>
+
+<marker id="arr__06b6d4" viewBox="0 0 10 10" refX="1" refY="5"
+  markerWidth="4.8999999999999995" markerHeight="4.8999999999999995" orient="auto-start-reverse">
+  <path d="M 0 1.5 L 8.5 5 L 0 8.5 Z" fill="#06b6d4" opacity="1"/>
+</marker>
+    <style>* { box-sizing: border-box; }
+text { user-select: none; }
+
+@keyframes __fadeUp    { from { opacity:0; transform:translateY(16px) scale(.97) } to { opacity:1; transform:translateY(0) scale(1) } }
+@keyframes __fadeDown  { from { opacity:0; transform:translateY(-16px) scale(.97) } to { opacity:1; transform:translateY(0) scale(1) } }
+@keyframes __fadeLeft  { from { opacity:0; transform:translateX(16px) scale(.97) } to { opacity:1; transform:translateX(0) scale(1) } }
+@keyframes __fadeRight { from { opacity:0; transform:translateX(-16px) scale(.97) } to { opacity:1; transform:translateX(0) scale(1) } }
+@keyframes __zoomIn    { from { opacity:0; transform:scale(.6) } 70% { transform:scale(1.04) } to { opacity:1; transform:scale(1) } }
+@keyframes __pop       { from { opacity:0; transform:scale(.5) } 60% { transform:scale(1.12) } 80% { transform:scale(.96) } to { opacity:1; transform:scale(1) } }
+@keyframes __draw      { to   { stroke-dashoffset:0 } }
+@keyframes __pulse     { 0%,100% { transform:scale(1) } 50% { transform:scale(1.05) } }
+@keyframes __glowPulse { 0%,100% { filter:drop-shadow(0 0 4px currentColor) } 50% { filter:drop-shadow(0 0 14px currentColor) drop-shadow(0 0 28px currentColor) } }
+@keyframes __shimmer   { from { background-position:200% center } to { background-position:-200% center } }
+@keyframes __float     { 0%,100% { transform:translateY(0) } 50% { transform:translateY(-6px) } }
+@keyframes __spin      { from { transform:rotate(0deg) } to { transform:rotate(360deg) } }
+
+._a27{animation: __fadeUp 500ms cubic-bezier(0.34,1.56,0.64,1) 0ms 1 forwards;}
+._a28{animation: __fadeUp 500ms cubic-bezier(0.34,1.56,0.64,1) 85ms 1 forwards; opacity:0;}
+._a29{animation: __fadeUp 500ms cubic-bezier(0.34,1.56,0.64,1) 170ms 1 forwards; opacity:0;}
+._a30{animation: __fadeUp 500ms cubic-bezier(0.34,1.56,0.64,1) 255ms 1 forwards; opacity:0;}
+@keyframes __blink_31 { 0%,100% { opacity:0.15 } 50% { opacity:1 } }
+._a31 { stroke-dasharray:5,6; animation:__blink_31 1200ms ease-in-out 425ms infinite; }
+._a32{animation: __draw 500ms cubic-bezier(0.34,1.56,0.64,1) 595ms 1 forwards; stroke-dasharray:150.0; stroke-dashoffset:150.0;}
+._a33{animation: __draw 500ms cubic-bezier(0.34,1.56,0.64,1) 765ms 1 forwards; stroke-dasharray:150.0; stroke-dashoffset:150.0;}
+._a34{animation: __draw 500ms cubic-bezier(0.34,1.56,0.64,1) 935ms 1 forwards; stroke-dasharray:150.0; stroke-dashoffset:150.0;}
+@keyframes __march_35 { from { stroke-dashoffset:0 } to { stroke-dashoffset:-11 } }
+._a35 { stroke-dasharray:6,5; animation:__march_35 500ms linear 1020ms infinite; }
+@keyframes __march_36 { from { stroke-dashoffset:0 } to { stroke-dashoffset:-11 } }
+._a36 { stroke-dasharray:6,5; animation:__march_36 500ms linear 1105ms infinite; }
+@keyframes __march_37 { from { stroke-dashoffset:0 } to { stroke-dashoffset:-11 } }
+._a37 { stroke-dasharray:6,5; animation:__march_37 500ms linear 1190ms infinite; }
+._a38{animation: __zoomIn 600ms cubic-bezier(0.34,1.56,0.64,1) 1275ms 1 forwards; opacity:0;}
+._a39{animation: __pop 600ms cubic-bezier(0.34,1.56,0.64,1) 1360ms 1 forwards;}
+._a40{animation: __pulse 600ms cubic-bezier(0.34,1.56,0.64,1) 1445ms 1 forwards;}
+._a41{animation: __glowPulse 600ms cubic-bezier(0.34,1.56,0.64,1) 1530ms 1 forwards;}
+._a42{animation: __fadeUp 600ms cubic-bezier(0.34,1.56,0.64,1) 1615ms 1 forwards; opacity:0;}
+._a43{animation: __pop 600ms cubic-bezier(0.34,1.56,0.64,1) 1700ms 1 forwards; opacity:0;}
+._a44{animation: __fadeUp 600ms cubic-bezier(0.34,1.56,0.64,1) 1785ms 1 forwards; opacity:0;}
+._a45{animation: __fadeRight 600ms cubic-bezier(0.34,1.56,0.64,1) 1870ms 1 forwards; opacity:0;}
+._a46{animation: __fadeUp 600ms cubic-bezier(0.34,1.56,0.64,1) 1955ms 1 forwards; opacity:0;}
+._a47{animation: __zoomIn 600ms cubic-bezier(0.34,1.56,0.64,1) 2040ms 1 forwards; opacity:0;}</style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1231" height="835" fill="url(#__bgGrad)"/>
+  
+  <circle cx="184.7" cy="167.0" r="292.3"
+    fill="#6366f1" opacity="0.12" filter="url(#__bg_blur)"/>
+  <circle cx="1046.3" cy="626.3" r="250.5"
+    fill="#8b5cf6" opacity="0.1" filter="url(#__bg_blur)"/>
+  <circle cx="615.5" cy="417.5" r="208.8"
+    fill="#06b6d4" opacity="0.07" filter="url(#__bg_blur)"/>
+
+  
+  <text x="55" y="43"
+    font-size="20" font-weight="700" font-family="'Inter', system-ui, sans-serif"
+    fill="#e2e8f0" letter-spacing="-0.02em">Ethereum Signing Architectures Compared</text>
+  <text x="55" y="67"
+    font-size="13" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+    fill="#94a3b8">From raw keys to hardware enclaves — security vs. complexity tradeoff</text>
+  
+  <g opacity="0.7">
+    <g transform="translate(997.4,33.0) scale(0.0130)" fill="#94a3b8">
+      <path d="m654.53 592.55 276.12 394.95h-113.32l-225.32-322.28v-.02l-33.08-47.31-263.21-376.5h113.32l212.41 303.85z"/>
+<path d="m1094.42 0h-961.84c-73.22 0-132.58 59.36-132.58 132.58v961.84c0 73.22 59.36 132.58 132.58 132.58h961.84c73.22 0 132.58-59.36 132.58-132.58v-961.84c0-73.22-59.36-132.58-132.58-132.58zm-311.8 1040.52-228.01-331.84-285.47 331.84h-73.78l326.49-379.5-326.49-475.17h249.02l215.91 314.23 270.32-314.23h73.78l-311.33 361.9h-.02l338.6 492.77z"/>
+    </g>
+    <text x="1019.4" y="45.0"
+      font-size="15" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#94a3b8" text-anchor="start"
+      letter-spacing="0.01em">x.com/raultotocayo</text>
+  </g>
+
+  <!-- Diagram -->
+  <g transform="translate(55,107)">
+    
+<g id="g_grp_raw" data-group="grp_raw" class="_a27" style="transform-origin:550.0px 570.0px">
+  <rect x="249.0" y="507.0" width="602.0" height="126.0"
+    rx="18" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.28)" stroke-width="1.25" stroke-dasharray="8,5" opacity="1"/>
+  <text x="550.0" y="527.0"
+    font-size="12" font-weight="600" text-anchor="middle"
+    font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#fca5a5" letter-spacing="0.05em"
+    text-transform="uppercase">❌ Anti-Pattern: Raw Key</text>
+</g>
+<g id="g_grp_kms" data-group="grp_kms" class="_a28" style="transform-origin:550.0px 406.5px">
+  <rect x="249.0" y="326.0" width="602.0" height="161.0"
+    rx="18" fill="rgba(245,158,11,0.04)" stroke="rgba(245,158,11,0.28)" stroke-width="1.25" stroke-dasharray="8,5" opacity="1"/>
+  <text x="550.0" y="346.0"
+    font-size="12" font-weight="600" text-anchor="middle"
+    font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#fde68a" letter-spacing="0.05em"
+    text-transform="uppercase">✅ Cloud KMS</text>
+</g>
+<g id="g_grp_mpc" data-group="grp_mpc" class="_a29" style="transform-origin:550.0px 234.5px">
+  <rect x="249.0" y="163.0" width="602.0" height="143.0"
+    rx="18" fill="rgba(99,102,241,0.04)" stroke="rgba(99,102,241,0.28)" stroke-width="1.25" stroke-dasharray="8,5" opacity="1"/>
+  <text x="550.0" y="183.0"
+    font-size="12" font-weight="600" text-anchor="middle"
+    font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#c7d2fe" letter-spacing="0.05em"
+    text-transform="uppercase">✅ MPC Shares</text>
+</g>
+<g id="g_grp_tee" data-group="grp_tee" class="_a30" style="transform-origin:550.0px 71.5px">
+  <rect x="249.0" y="0.0" width="602.0" height="143.0"
+    rx="18" fill="rgba(6,182,212,0.04)" stroke="rgba(6,182,212,0.28)" stroke-width="1.25" stroke-dasharray="8,5" opacity="1"/>
+  <text x="550.0" y="20.0"
+    font-size="12" font-weight="600" text-anchor="middle"
+    font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#a5f3fc" letter-spacing="0.05em"
+    text-transform="uppercase">✅ TEE Enclave</text>
+</g>
+    
+<g data-edge="tx_request-raw_key">
+  <path id="ep_tx_request_raw_key_4" d="M 95.96693386773546,353.5 C 113.97,389.58 178.49,533.92 204,570 C 229.51,606.08 229.56,570.00 249,570 C 268.44,570.00 308.71,570.00 320.65,570"
+    fill="none" stroke="#ef4444" stroke-width="2" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)" />
+  <rect x="180.8" y="540.5" width="91.4" height="35.0" rx="5" fill="rgba(6,7,15,0.85)" stroke="none"/>
+  <text x="226.5" y="551.3"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#fca5a5">plaintext key</text>
+  <text x="226.5" y="564.8"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#fca5a5">in memory</text>
+  <circle r="3" fill="#ef4444" opacity="0.85">
+    <animateMotion dur="800ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_tx_request_raw_key_4"/>
+    </animateMotion>
+  </circle>
+  <circle r="3" fill="#ef4444" opacity="0.85">
+    <animateMotion dur="800ms" repeatCount="indefinite"
+      begin="400ms">
+      <mpath href="#ep_tx_request_raw_key_4"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="raw_key-raw_risk">
+  <path id="ep_raw_key_raw_risk_5" d="M 483,570 C 496.17,570.00 540.00,570.00 562,570 C 584.00,570.00 606.16,570.00 614.9875,570"
+    fill="none" stroke="#ef4444" stroke-width="1.5" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__ef4444)"  class="_a31"/>
+</g>
+<g data-edge="tx_request-cloud_kms">
+  <path id="ep_tx_request_cloud_kms_6" d="M 127.27325581395348,353.5 C 140.06,362.33 183.71,397.67 204,406.5 C 224.29,415.33 230.88,406.50 249,406.5 C 267.12,406.50 302.11,406.50 312.73125,406.5"
+    fill="none" stroke="#f59e0b" stroke-width="2.25" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__f59e0b)" />
+  <rect x="186.6" y="377.0" width="79.8" height="35.0" rx="5" fill="rgba(6,7,15,0.85)" stroke="none"/>
+  <text x="226.5" y="387.8"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#fde68a">hash only →</text>
+  <text x="226.5" y="401.3"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#fde68a">HSM signs</text>
+  <circle r="4" fill="#f59e0b" opacity="0.85">
+    <animateMotion dur="750ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_tx_request_cloud_kms_6"/>
+    </animateMotion>
+  </circle>
+  <circle r="4" fill="#f59e0b" opacity="0.85">
+    <animateMotion dur="750ms" repeatCount="indefinite"
+      begin="375ms">
+      <mpath href="#ep_tx_request_cloud_kms_6"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="cloud_kms-kms_benefit">
+  <path id="ep_cloud_kms_kms_benefit_7" d="M 490,406.5 C 502.00,406.50 541.75,406.50 562,406.5 C 582.25,406.50 603.24,406.50 611.4875,406.5"
+    fill="none" stroke="#10b981" stroke-width="1.5" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__10b981)"  class="_a32"/>
+</g>
+<g data-edge="tx_request-mpc_signing">
+  <path id="ep_tx_request_mpc_signing_8" d="M 127.27325581395348,287.5 C 140.06,278.67 183.71,243.33 204,234.5 C 224.29,225.67 233.97,234.50 249,234.5 C 264.02,234.50 286.63,234.50 294.15,234.5"
+    fill="none" stroke="#6366f1" stroke-width="2" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__6366f1)" />
+  <rect x="166.3" y="205.0" width="120.4" height="35.0" rx="5" fill="rgba(6,7,15,0.85)" stroke="none"/>
+  <text x="226.5" y="215.8"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#c7d2fe">partial signatures</text>
+  <text x="226.5" y="229.3"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#c7d2fe">coordinated</text>
+  <circle r="3" fill="#6366f1" opacity="0.85">
+    <animateMotion dur="800ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_tx_request_mpc_signing_8"/>
+    </animateMotion>
+  </circle>
+  <circle r="3" fill="#6366f1" opacity="0.85">
+    <animateMotion dur="800ms" repeatCount="indefinite"
+      begin="400ms">
+      <mpath href="#ep_tx_request_mpc_signing_8"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="mpc_signing-mpc_benefit">
+  <path id="ep_mpc_signing_mpc_benefit_9" d="M 509.5,234.5 C 518.25,234.50 543.84,234.50 562,234.5 C 580.16,234.50 609.07,234.50 618.4875,234.5"
+    fill="none" stroke="#10b981" stroke-width="1.5" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__10b981)"  class="_a33"/>
+</g>
+<g data-edge="tx_request-tee_enclave">
+  <path id="ep_tx_request_tee_enclave_10" d="M 96,287.5 C 114.00,251.50 178.50,107.50 204,71.5 C 229.50,35.50 235.22,71.50 249,71.5 C 262.77,71.50 280.38,71.50 286.65,71.5"
+    fill="none" stroke="#06b6d4" stroke-width="2" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__06b6d4)" />
+  <rect x="186.6" y="42.0" width="79.8" height="35.0" rx="5" fill="rgba(6,7,15,0.85)" stroke="none"/>
+  <text x="226.5" y="52.8"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#a5f3fc">sign inside</text>
+  <text x="226.5" y="66.3"
+    text-anchor="middle" dominant-baseline="middle"
+    font-size="10" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" fill="#a5f3fc">CPU enclave</text>
+  <circle r="3" fill="#06b6d4" opacity="0.85">
+    <animateMotion dur="800ms" repeatCount="indefinite"
+      begin="0ms">
+      <mpath href="#ep_tx_request_tee_enclave_10"/>
+    </animateMotion>
+  </circle>
+  <circle r="3" fill="#06b6d4" opacity="0.85">
+    <animateMotion dur="800ms" repeatCount="indefinite"
+      begin="400ms">
+      <mpath href="#ep_tx_request_tee_enclave_10"/>
+    </animateMotion>
+  </circle>
+</g>
+<g data-edge="tee_enclave-tee_benefit">
+  <path id="ep_tee_enclave_tee_benefit_11" d="M 517,71.5 C 524.50,71.50 547.92,71.50 562,71.5 C 576.08,71.50 594.91,71.50 601.4875,71.5"
+    fill="none" stroke="#10b981" stroke-width="1.5" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__10b981)"  class="_a34"/>
+</g>
+<g data-edge="kms_benefit-signed_output">
+  <path id="ep_kms_benefit_signed_output_12" d="M 796,406.5 C 805.17,406.50 834.33,406.50 851,406.5 C 867.67,406.50 873.69,428.65 896,406.5 C 918.31,384.35 970.04,295.76 984.8508059251798,273.6100989640788"
+    fill="none" stroke="#10b981" stroke-width="2" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__10b981)"  class="_a35"/>
+</g>
+<g data-edge="mpc_benefit-signed_output">
+  <path id="ep_mpc_benefit_signed_output_13" d="M 789,234.5 C 799.33,234.50 833.17,234.50 851,234.5 C 868.83,234.50 882.23,234.50 896,234.5 C 909.77,234.50 927.38,234.50 933.65,234.5"
+    fill="none" stroke="#10b981" stroke-width="2" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__10b981)"  class="_a36"/>
+</g>
+<g data-edge="tee_benefit-signed_output">
+  <path id="ep_tee_benefit_signed_output_14" d="M 806,71.5 C 813.50,71.50 836.00,71.50 851,71.5 C 866.00,71.50 873.92,50.83 896,71.5 C 918.08,92.17 968.90,174.83 983.4806166020619,195.4942652707486"
+    fill="none" stroke="#10b981" stroke-width="2" filter="url(#__glowEdge)"
+    opacity="1" marker-end="url(#arr__10b981)"  class="_a37"/>
+</g>
+    
+<g id="n_tx_request" data-node="tx_request" class="_a38" style="transform-origin:79.5px 320.5px">
+  <polygon points="18,287.5 177,287.5 141,353.5 -18,353.5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="79.5" y="317.22" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#e2e8f0" letter-spacing="0.01em">Transaction</text><text x="79.5" y="335.42" text-anchor="middle"
+      font-size="13" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#e2e8f0" letter-spacing="0.01em">Request</text>
+</g>
+<g id="n_raw_key" data-node="raw_key" class="_a39" style="transform-origin:405.5px 570px">
+  <rect x="328" y="539.5" width="155" height="61" rx="14"
+    fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="405.5" y="568.24" text-anchor="middle"
+      font-size="12" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" letter-spacing="0.01em">Raw Key in .env</text><text x="405.5" y="585.04" text-anchor="middle"
+      font-size="9.8" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" opacity="0.6">⚠ key in process memory</text>
+</g>
+<g id="n_raw_risk" data-node="raw_risk" class="_a40" style="transform-origin:706.5px 570px">
+  <rect x="620.5" y="540" width="172" height="60" rx="30"
+    fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="706.5" y="567.23" text-anchor="middle"
+      font-size="11" font-weight="700" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" letter-spacing="0.01em">Full Exposure</text><text x="706.5" y="582.63" text-anchor="middle"
+      font-size="11" font-weight="700" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fca5a5" letter-spacing="0.01em">70% of crypto theft</text>
+</g>
+<g id="n_cloud_kms" data-node="cloud_kms" class="_a41" style="transform-origin:405.5px 406.5px">
+  
+  <path d="M321,372.9 a84.5,14.399999999999999 0 0 1 169,0 v67.2 a84.5,14.399999999999999 0 0 1 -169,0 z"
+    fill="rgba(245,158,11,0.2)" stroke="#f59e0b" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <ellipse cx="405.5" cy="372.9" rx="84.5" ry="14.399999999999999"
+    fill="rgba(245,158,11,0.2)" stroke="#f59e0b" stroke-width="1.5" opacity="1"/>
+  <text x="405.5" y="396.34" text-anchor="middle"
+      font-size="12" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fde68a" letter-spacing="0.01em">Cloud KMS</text><text x="405.5" y="413.14" text-anchor="middle"
+      font-size="12" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fde68a" letter-spacing="0.01em">AWS / GCP / Azure</text><text x="405.5" y="429.94" text-anchor="middle"
+      font-size="9.8" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#fde68a" opacity="0.6">FIPS 140-2 HSM</text>
+</g>
+<g id="n_kms_benefit" data-node="kms_benefit" class="_a42" style="transform-origin:706.5px 406.5px">
+  <rect x="617" y="376.5" width="179" height="60" rx="30"
+    fill="rgba(16,185,129,0.18)" stroke="#10b981" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="706.5" y="403.73" text-anchor="middle"
+      font-size="11" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#6ee7b7" letter-spacing="0.01em">Key Never Exported</text><text x="706.5" y="419.13" text-anchor="middle"
+      font-size="11" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#6ee7b7" letter-spacing="0.01em">50–200ms · $0.03/10K</text>
+</g>
+<g id="n_mpc_signing" data-node="mpc_signing" class="_a43" style="transform-origin:405.5px 234.5px">
+  <polygon points="301.5,234.5 327.5,195.5 483.5,195.5 509.5,234.5 483.5,273.5 327.5,273.5" fill="rgba(99,102,241,0.15)" stroke="#6366f1" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="405.5" y="224.34" text-anchor="middle"
+      font-size="12" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#c7d2fe" letter-spacing="0.01em">MPC Shares</text><text x="405.5" y="241.14" text-anchor="middle"
+      font-size="12" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#c7d2fe" letter-spacing="0.01em">Distributed Key Gen</text><text x="405.5" y="257.94" text-anchor="middle"
+      font-size="9.8" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#c7d2fe" opacity="0.6">no single point of trust</text>
+</g>
+<g id="n_mpc_benefit" data-node="mpc_benefit" class="_a44" style="transform-origin:706.5px 234.5px">
+  <rect x="624" y="204.5" width="165" height="60" rx="30"
+    fill="rgba(16,185,129,0.18)" stroke="#10b981" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="706.5" y="231.73" text-anchor="middle"
+      font-size="11" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#6ee7b7" letter-spacing="0.01em">No Full Key Exists</text><text x="706.5" y="247.13" text-anchor="middle"
+      font-size="11" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#6ee7b7" letter-spacing="0.01em">100–500ms latency</text>
+</g>
+<g id="n_tee_enclave" data-node="tee_enclave" class="_a45" style="transform-origin:405.5px 71.5px">
+  <polygon points="294,71.5 321.875,32.5 489.125,32.5 517,71.5 489.125,110.5 321.875,110.5" fill="rgba(6,182,212,0.15)" stroke="#06b6d4" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="405.5" y="61.34" text-anchor="middle"
+      font-size="12" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#a5f3fc" letter-spacing="0.01em">TEE Enclave</text><text x="405.5" y="78.14" text-anchor="middle"
+      font-size="12" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#a5f3fc" letter-spacing="0.01em">Hardware-Isolated CPU</text><text x="405.5" y="94.94" text-anchor="middle"
+      font-size="9.8" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#a5f3fc" opacity="0.6">OS cannot access keys</text>
+</g>
+<g id="n_tee_benefit" data-node="tee_benefit" class="_a46" style="transform-origin:706.5px 71.5px">
+  <rect x="607" y="41.5" width="199" height="60" rx="30"
+    fill="rgba(16,185,129,0.18)" stroke="#10b981" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="706.5" y="68.73" text-anchor="middle"
+      font-size="11" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#6ee7b7" letter-spacing="0.01em">Zero Custodial Risk</text><text x="706.5" y="84.13" text-anchor="middle"
+      font-size="11" font-weight="600" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#6ee7b7" letter-spacing="0.01em">Hardware Trust Required</text>
+</g>
+<g id="n_signed_output" data-node="signed_output" class="_a47" style="transform-origin:1011px 234.5px">
+  <rect x="941" y="201.5" width="140" height="66" rx="14"
+    fill="rgba(16,185,129,0.18)" stroke="#10b981" stroke-width="1.5" filter="url(#__shadow)" opacity="1"/>
+  <text x="1011" y="231.22" text-anchor="middle"
+      font-size="13" font-weight="700" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#6ee7b7" letter-spacing="0.01em">Signed</text><text x="1011" y="249.42" text-anchor="middle"
+      font-size="13" font-weight="700" font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+      fill="#6ee7b7" letter-spacing="0.01em">Transaction</text>
+</g>
+  </g>
+</svg>
